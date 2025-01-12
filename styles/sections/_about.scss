@@ -1,0 +1,63 @@
+@use '../variables' as * ;
+
+.about-me {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 5rem 10% 8rem 10%;
+
+	.headshot {
+		border-radius: 100%;
+		object-fit: cover;
+		object-position: 70% 0;
+		height: 40vh;
+		margin-right: 6rem;
+		width: 40vh;
+	}
+
+	.about-text {
+		text-align: left;
+		.heading {
+			font-size: $step-8;
+			position: relative;
+			display: inline-block;
+			margin-top: 3rem;
+			.decoration {
+				position: absolute;
+				left: calc(100% + 0.5ch);
+			}
+		}
+
+		.description {
+			color: #000;
+			max-width: 600px;
+		}
+	}
+	@media (max-width: $breakpoint-md) {
+		margin-left: 0;
+		.headshot {
+			margin: 0 auto;
+		}
+		.about-text {
+			text-align: center;
+			width: 100%;
+			.description {
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+	@media (max-width: $breakpoint-sm) {
+		margin-block: 2rem;
+		margin-inline: 5%;
+		.headshot {
+			height: 25vh;
+			width: 25vh;
+		}
+		.heading {
+			margin: 1.5rem auto;
+			.decoration {
+				display: none;
+			}
+		}
+	}
+}
