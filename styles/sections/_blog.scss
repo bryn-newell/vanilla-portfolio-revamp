@@ -1,0 +1,39 @@
+@use '../variables' as * ;
+
+#blog {
+	padding-inline: 5%;
+	.heading {
+		margin-top: 5rem;
+		margin-bottom: 2rem;
+	}
+
+	.posts {
+		font-size: $step-2;
+		font-weight: 500;
+		max-width: 850px;
+		margin: 0 auto;
+		a {
+			color: black;
+			&:not(:last-child) {
+				&:after {
+					content: "/";
+					display: inline-block;
+					margin-right: 0.5rem;
+				}
+			}
+		}
+		.list-number {
+			color: $rose-gold;
+		}
+	}
+
+	@media (max-width: $breakpoint-sm) {
+		.heading {
+			margin-top: 2rem;
+		}
+		.posts {
+			// to do - find a different step since i still want it smaller on mobile
+			font-size: $step-1;
+		}
+	}
+}
