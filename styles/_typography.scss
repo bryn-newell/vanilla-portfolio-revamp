@@ -1,0 +1,10 @@
+@use 'variables' as * ;
+
+body {
+  font-size: $step-0;
+}
+
+h1 {
+  font-family: 'le murmure';
+  font-size: $step-9;
+}

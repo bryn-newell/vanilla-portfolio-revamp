@@ -1,0 +1,71 @@
+@use 'variables' as *;
+
+@font-face {
+  font-family: 'le murmure';
+  src: url('/assets/Le_Murmure.woff2') format('woff2');
+}
+
+*, *:before, *:after {
+  box-sizing: border-box
+}
+
+
+h1, h2, h3, h4 {
+  font-weight: normal;
+}
+
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body { 
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  margin: 0;
+}
+
+section {
+  scroll-margin-top: 5rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.outline-font {
+  color: $rose-gold;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: $rose-gold;
+  font-family: 'le murmure';
+
+  &.black {
+    color: black;
+    -webkit-text-stroke-color: black;
+  }
+}
+
+.heading {
+  margin-bottom: 3rem;
+  font-size: 12rem;
+}
+
+.link {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+  &.rosegold {
+    color: $rose-gold;
+  }
+}
