@@ -7,7 +7,7 @@
     "start": "concurrently 'sass --watch styles:_site/css' 'npx @11ty/eleventy --serve'"
   },
   "keywords": [],
-  "author": "",
+  "author": "Bryn Newell",
   "license": "ISC",
   "description": "",
   "type": "module",

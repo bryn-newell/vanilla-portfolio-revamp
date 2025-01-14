@@ -1,0 +1,32 @@
+	<section id="projects">
+		<h2 class="heading outline-font">projects</h2>
+    {% for project in projects %}
+		<div
+			class="project"
+		>
+			<span class="outline-font black project-number">0{{ loop.index }}</span>
+			<h3 class="title">{{ project.title }}</h3>
+			<p class="date">{{ project.date }}</p>
+			<p
+				class="description"
+			>{{ project.description | safe }}</p>
+			<ul class="tools">
+        {% for tool in project.tools %}
+				<li
+				>{{ tool }}</li>
+        {% endfor %}
+			</ul>
+      {%if project.link%}
+			<a
+				href="project.link"
+				class="project-link link"
+				target="_blank"
+				ref="noopener noreferrer"
+			>see the work<span
+					class="decoration"
+					aria-hidden="true"
+				>—</span></a>
+        {% endif %}
+		</div>
+    {% endfor %}
+	</section>
