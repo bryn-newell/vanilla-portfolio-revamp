@@ -1,0 +1,19 @@
+@use '../variables' as * ;
+
+.social-links {
+	display: flex;
+	a {
+		margin: 0 0.75rem;
+	}
+	:first-child {
+		margin-left: 0;
+	}
+	.logo {
+		height: 2rem;
+		fill: white;
+	}
+	@media (max-width: $breakpoint-sm) {
+		text-align: left;
+		width: 100%;
+	}
+}

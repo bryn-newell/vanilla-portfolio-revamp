@@ -15,8 +15,9 @@ layout: layout.njk
       >—</span></h1>
     <div class="desc-container">
       <p class="description">Hi there!<br />I'm bryn (she/her), a creative developer passionate about creating accessible and beautiful front-end code, curating communities, and moving the needle forward in any environment I can.</p>
-      <!-- to do - use nunjucks/webc here to start using components -->
-      <!-- <SocialLinks /> -->
+
+      {% include 'socialLinks.html' %}
+
     </div>
     <nav class="site-sections">
       <a
@@ -95,8 +96,9 @@ class="footer"
   >—</span></div>
 <div class="year">2024</div>
 </div>
-<!-- to do -->
-<!-- <SocialLinks /> -->
+
+{% include 'socialLinks.html' %}
+
 <p class="henry">design by <a
   class="link"
   href="https://henry.codes/"
