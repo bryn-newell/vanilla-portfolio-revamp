@@ -1,6 +1,5 @@
 @use '../variables' as * ;
 
-// to do - rename this file to not be main
 // Note to self - this is the only file that is mobile first breakpoints
 .main {
 	background: linear-gradient(#e0a6a4, $light-pink);
@@ -25,7 +24,7 @@
 	.content {
 		display: flex;
 		padding: 5%;
-		padding-top: 5vh;
+		padding-top: 11rem;
 		flex-wrap: wrap;
 
 		.header {
