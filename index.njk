@@ -1,0 +1,107 @@
+---
+layout: layout.njk
+---
+
+<header class="main">
+  <img
+    src="/assets/mainBG.jpg"
+    class="header-image"
+    alt=""
+  />
+  <section class="content">
+    <h1 class="header">bryn newell<span
+        class="decoration"
+        aria-hidden="true"
+      >—</span></h1>
+    <div class="desc-container">
+      <p class="description">Hi there!<br />I'm bryn (she/her), a creative developer passionate about creating accessible and beautiful front-end code, curating communities, and moving the needle forward in any environment I can.</p>
+      <!-- to do - use nunjucks/webc here to start using components -->
+      <!-- <SocialLinks /> -->
+    </div>
+    <nav class="site-sections">
+      <a
+        class="link"
+        href="#blog"
+      >blog</a>
+      <a
+        class="link"
+        href="#projects"
+      >projects</a>
+      <a
+        class="link"
+        href="#resume"
+      >resume/cv</a>
+    </nav>
+  </section>
+</header>
+<section class="about-me">
+  <img
+    src="/assets/fun-headshot.jpeg"
+    alt="headshot of bryn"
+    class="headshot"
+  />
+  <div class="about-text">
+    <h2 class="heading outline-font">about me<span
+        class="decoration"
+        aria-hidden="true"
+      >—</span></h2>
+    <p class="description">I'm passionate about the a11y community and using tech to bring people together. I love using my expertise on accessibility and beautiful design to improve the experience of the web for all users. I take the ego out of my work, bring positivity, and believe in leading by example through building my collaborators and teammates up together.<br><br />I'm currently located in Colorado, though I'm an avid traveler and have spent many moons doing the "digital nomad" thing. I also love motorcycles, yoga, and reading.<br /><br />I'm employed full time as a Full Stack Developer, but I am available for freelance work as well. I’m happy to tackle new projects from the ground up or audit and revamp what you’ve already got. I'd love to work together so please feel free to <a
+        href="mailto:bryn.codes@gmail.com"
+        class="link rosegold"
+      >get in touch!</a>
+    </p>
+  </div>
+</section>
+<section id="blog">
+  <h2 class="heading outline-font">blog</h2>
+  <div class="posts">
+    <a
+      class="link"
+      href="https://medium.com/@bryn.newell/https-medium-com-bryn-newell-from-one-non-expert-to-another-fb31add2f3c6"
+      target="_blank"
+      ref="noopener noreferrer"
+    >
+      <span class="list-number">01. </span>From One Non-Expert to Another - Learning What I Didn't Know I Didn't Know
+    </a>
+    <a
+      class="link"
+      href="https://medium.com/@bryn.newell/a-request-to-stop-saying-accessibility-is-hard-7ff0314c3280"
+      target="_blank"
+      ref="noopener noreferrer"
+    >
+      <span class="list-number">02. </span>A Request to Stop Saying Accessibility Is Hard
+    </a>
+  </div>
+</section>
+
+{% include 'projects.njk' %}
+
+<section id="resume">
+  <h2 class="heading outline-font">resume<br class="sm-only" />/cv</h2>
+  <a
+    href="/assets/BrynNewellResume.pdf"
+    target="_blank"
+    class="download-button link"
+    download
+  >DOWNLOAD THE PDF</a>
+</section>
+<footer
+class="footer"
+>
+<div class="bryn">
+<div>bryn newell <span
+    class="decoration"
+    aria-hidden="true"
+  >—</span></div>
+<div class="year">2024</div>
+</div>
+<!-- to do -->
+<!-- <SocialLinks /> -->
+<p class="henry">design by <a
+  class="link"
+  href="https://henry.codes/"
+  target="_blank"
+  ref="noopener noreferrer"
+>Henry Desroches</a></p>
+</footer>
+
