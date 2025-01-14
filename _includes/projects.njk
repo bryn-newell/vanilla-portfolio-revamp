@@ -16,9 +16,9 @@
 				>{{ tool }}</li>
         {% endfor %}
 			</ul>
-      {%if project.link%}
+      {% if project.link %}
 			<a
-				href="project.link"
+				href="{{project.link}}"
 				class="project-link link"
 				target="_blank"
 				ref="noopener noreferrer"
