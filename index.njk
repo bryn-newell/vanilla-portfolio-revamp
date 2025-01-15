@@ -2,22 +2,21 @@
 layout: layout.njk
 ---
 
-<header class="main">
+<header class="header">
   <img
     src="/assets/mainBG.jpg"
-    class="header-image"
+    class="header__image"
     alt=""
   />
-  <section class="content">
-    <h1 class="header">bryn newell<span
-        class="decoration"
+  <section class="header__content">
+    <h1 class="header__title">bryn newell<span
+        class="header__decoration"
         aria-hidden="true"
       >—</span></h1>
-    <div class="desc-container">
-      <p class="description">Hi there!<br />I'm bryn (she/her), a creative developer passionate about creating accessible and beautiful front-end code, curating communities, and moving the needle forward in any environment I can.</p>
+    <div class="flex--col">
+      <p class="header__description">Hi there!<br />I'm bryn (she/her), a creative developer passionate about creating accessible and beautiful front-end code, curating communities, and moving the needle forward in any environment I can.</p>
 
       {% include 'socialLinks.html' %}
-
     </div>
     <nav class="site-sections">
       <a
@@ -35,6 +34,7 @@ layout: layout.njk
     </nav>
   </section>
 </header>
+
 <section class="about-me">
   <img
     src="/assets/fun-headshot.jpeg"
@@ -53,6 +53,7 @@ layout: layout.njk
     </p>
   </div>
 </section>
+
 <section id="blog">
   <h2 class="heading outline-font">blog</h2>
   <div class="posts">

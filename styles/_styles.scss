@@ -5,20 +5,8 @@
   src: url('/assets/Le_Murmure.woff2') format('woff2');
 }
 
-
-h1, h2, h3, h4 {
-  font-weight: normal;
-}
-
-
 html:focus-within {
   scroll-behavior: smooth;
-}
-
-body { 
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 section {
@@ -70,10 +58,13 @@ header,section {
 
 .link {
   text-decoration: none;
+  &, &:visited {
+    color: #FFF;
+  }
   &:hover, &:focus {
     text-decoration: underline;
   }
-  &.rosegold {
+  &.rosegold, &.rosegold:visited {
     color: $rose-gold;
   }
 }
