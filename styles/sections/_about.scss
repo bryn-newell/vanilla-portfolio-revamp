@@ -42,7 +42,8 @@
 	@media (min-width: $breakpoint-lg) {
 		display: flex; 
 		padding-inline: 10%;
-		margin-block: 5rem;
+		margin-block-start: 5rem;
+		margin-block-end: 8rem;
 
 		&__headshot {
 			margin-inline-start: 0;

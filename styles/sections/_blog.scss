@@ -2,6 +2,7 @@
 
 .blog {
 	text-align: center;
+	margin-block-end: 4rem;
 
 	&__title {
 		font-size: $step-10;
@@ -29,5 +30,9 @@
 		&-number {
 			color: $rose-gold;
 		}
+	}
+
+	@media (min-width: $breakpoint-md) {
+		margin-block-end: 12rem;
 	}
 }
