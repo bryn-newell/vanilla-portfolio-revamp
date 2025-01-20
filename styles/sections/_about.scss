@@ -1,7 +1,8 @@
 @use '../variables' as * ;
 
 .about {
-	margin-block: 2rem;
+	margin-block-start: 2rem;
+	margin-block-end: 4rem;
 
 	&__headshot {
 		border-radius: 100%;
