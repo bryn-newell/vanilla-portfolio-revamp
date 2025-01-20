@@ -1,63 +1,61 @@
 @use '../variables' as * ;
 
-.about-me {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 5rem 10% 8rem 10%;
+.about {
+	margin-block: 2rem;
 
-	.headshot {
+	&__headshot {
 		border-radius: 100%;
+		height: 25vh;
+		width: 25vh;
+		margin-inline: auto;
+		margin-block-end: 3rem;
 		object-fit: cover;
 		object-position: 70% 0;
-		height: 40vh;
-		margin-right: 6rem;
-		width: 40vh;
 	}
 
-	.about-text {
-		text-align: left;
-		.heading {
-			font-size: $step-8;
-			position: relative;
-			display: inline-block;
-			margin-top: 3rem;
-			.decoration {
-				position: absolute;
-				left: calc(100% + 0.5ch);
-			}
+	&__content {
+		text-align: center;
+	}
+
+	&__title {
+		margin-block-end: 1rem;
+
+		&-decoration {
+			display: none;
+		}
+	}
+
+	@media (min-width: $breakpoint-md) {
+		// to do - can this be fluid too? 
+		&__headshot {
+			height: 40vh;
+			width: 40vh;
 		}
 
-		.description {
-			color: #000;
+		&__title-decoration {
+			display: inline-block;
+			margin-inline-start: .5ch;
+		}
+	}
+
+	@media (min-width: $breakpoint-lg) {
+		display: flex; 
+		padding-inline: 10%;
+		margin-block: 5rem;
+
+		&__headshot {
+			margin-inline-start: 0;
+			margin-inline-end: 6rem;
+		}
+
+		&__content {
+			text-align: left;
 			max-width: 600px;
 		}
-	}
-	@media (max-width: $breakpoint-md) {
-		margin-left: 0;
-		.headshot {
-			margin: 0 auto;
-		}
-		.about-text {
-			text-align: center;
-			width: 100%;
-			.description {
-				margin-left: auto;
-				margin-right: auto;
-			}
+
+		&__title {
+			margin-block-end: 2.5rem;
 		}
 	}
-	@media (max-width: $breakpoint-sm) {
-		margin-block: 2rem;
-		margin-inline: 5%;
-		.headshot {
-			height: 25vh;
-			width: 25vh;
-		}
-		.heading {
-			margin: 1.5rem auto;
-			.decoration {
-				display: none;
-			}
-		}
-	}
+
 }
