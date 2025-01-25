@@ -56,6 +56,9 @@
 		font-family: "le murmure";
 		// to do - i feel like this needs a 2.5
 		font-size: $step-2;
+		.decoration {
+			margin-inline-start: .5ch;
+		}
 	}
 }
 

@@ -2,16 +2,13 @@
 
 .social-links {
 	display: flex;
+	gap: 1.5rem;
 	a {
-		margin: 0 0.75rem;
 		height: 2rem;
-	}
-	:first-child {
-		margin-left: 0;
 	}
 	.logo {
 		height: 2rem;
-		fill: white;
+		fill: #FFF;
 	}
 	@media (max-width: $breakpoint-sm) {
 		text-align: left;
