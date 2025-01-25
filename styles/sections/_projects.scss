@@ -1,6 +1,7 @@
 @use '../variables' as * ;
 
 .projects-section {
+	margin-block-end: 4rem;
 	&__title {
 		font-size: $step-10;
 		text-align: center;
@@ -14,9 +15,12 @@
 	grid-template-columns: 1fr 2fr 1fr;
 	grid-template-rows: repeat(4, auto);
 	gap: 1rem 0;
-	margin-block-end: 4rem;
 	margin-inline: auto;
 	max-width: 1000px;
+	
+	&:not(:last-child) {
+		margin-block-end: 4rem;
+	}
 
 	&__number {
 		font-size: $step-10;
@@ -56,8 +60,11 @@
 }
 
 @media (min-width: $breakpoint-md) {
-	.projects-section__title {
-		text-align: left;
+	.projects-section {
+		margin-block-end: 12rem;
+		&__title {
+			text-align: left;
+		}
 	}
 	.project {
 		grid-template-rows: repeat(3, auto);

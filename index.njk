@@ -78,32 +78,33 @@ layout: layout.njk
 
 {% include 'projects.njk' %}
 
-<section id="resume">
-  <h2 class="heading outline-font">resume<br class="sm-only" />/cv</h2>
+<section id="resume" class="resume">
+  <h2 class="resume__title outline-font">resume/cv</h2>
   <a
     href="/assets/BrynNewellResume.pdf"
     target="_blank"
-    class="download-button link"
+    class="resume__download link"
     download
   >DOWNLOAD THE PDF</a>
 </section>
+
 <footer
 class="footer"
 >
-<div class="bryn">
-<div>bryn newell <span
-    class="decoration"
-    aria-hidden="true"
-  >—</span></div>
-<div class="year">{{ year }}</div>
-</div>
+  <div class="bryn">
+  <div>bryn newell <span
+      class="decoration"
+      aria-hidden="true"
+    >—</span></div>
+  <div class="year">{{ year }}</div>
+  </div>
 
-{% include 'socialLinks.html' %}
+  {% include 'socialLinks.html' %}
 
-<p class="henry">design by <a
-  class="link"
-  href="https://henry.codes/"
-  target="_blank"
-  ref="noopener noreferrer"
->Henry Desroches</a></p>
+  <p class="henry">design by <a
+    class="link"
+    href="https://henry.codes/"
+    target="_blank"
+    ref="noopener noreferrer"
+  >Henry Desroches</a></p>
 </footer>
