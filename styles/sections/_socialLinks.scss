@@ -3,15 +3,12 @@
 .social-links {
 	display: flex;
 	gap: 1.5rem;
+
 	a {
 		height: 2rem;
 	}
 	.logo {
 		height: 2rem;
 		fill: #FFF;
-	}
-	@media (max-width: $breakpoint-sm) {
-		text-align: left;
-		width: 100%;
 	}
 }
