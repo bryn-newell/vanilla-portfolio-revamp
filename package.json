@@ -14,6 +14,7 @@
   "type": "module",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "concurrently": "^9.1.0"
+    "concurrently": "^9.1.0",
+    "sass": "^1.83.4"
   }
 }
