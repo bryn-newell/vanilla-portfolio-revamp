@@ -18,7 +18,6 @@
 
 	&__content {
 		font-size: 1rem;
-		// to do - this would be a great place for fluid spacing
 		padding-block-start: 12rem;
 		padding-inline: 0;
 		width: 100%;
@@ -43,8 +42,7 @@
 	margin-block-start: 1rem;
 
 	.link:not(:last-child) {
-		// to do - fluid spacing
-		margin-inline-end: .5rem;
+		margin-inline-end: clamp(0.5625rem, 0.5408rem + 0.1087vw, 0.625rem);
 	}
 }
 
@@ -55,6 +53,8 @@
 		}
 		&__description {
 			// to do - make this not a magic number
+			// actually past bryn, it's staying a magic number for now.
+			// it's in one singular spot and makes sense. exceptions are allowed
 			max-width: 534px;
 		}
 	}

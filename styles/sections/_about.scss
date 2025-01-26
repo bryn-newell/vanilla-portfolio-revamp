@@ -6,8 +6,8 @@
 
 	&__headshot {
 		border-radius: 100%;
-		height: 25vh;
-		width: 25vh;
+		height: 16rem;
+		width: 16rem;
 		margin-inline: auto;
 		margin-block-end: 3rem;
 		object-fit: cover;
@@ -29,8 +29,8 @@
 	@media (min-width: $breakpoint-md) {
 		// to do - can this be fluid too? 
 		&__headshot {
-			height: 40vh;
-			width: 40vh;
+			height: 18rem;
+			width: 18rem;
 		}
 
 		&__title-decoration {

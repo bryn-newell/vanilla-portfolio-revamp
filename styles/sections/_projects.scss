@@ -11,8 +11,7 @@
 
 .project {
 	display: grid;
-	// to do - can this final colunn be min content to tighten it a little more?
-	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-columns: 1fr 2fr min-content;
 	grid-template-rows: repeat(4, auto);
 	gap: 1rem 0;
 	margin-inline: auto;
@@ -48,13 +47,13 @@
 		grid-row: 3 / 5;
 		list-style: none;
 		text-align: right;
+		margin-left: 16px;
 	}
 
 	&__link {
 		grid-row: 4;
 		grid-column: 1 / 3;
 		font-family: "le murmure";
-		// to do - i feel like this needs a 2.5
 		font-size: $step-2;
 		.decoration {
 			margin-inline-start: .5ch;
