@@ -14,10 +14,6 @@
 		object-position: 70% 0;
 	}
 
-	&__content {
-		text-align: center;
-	}
-
 	&__title {
 		margin-block-end: 1rem;
 
@@ -33,10 +29,7 @@
 			width: 18rem;
 		}
 
-		&__title-decoration {
-			display: inline-block;
-			margin-inline-start: .5ch;
-		}
+
 	}
 
 	@media (min-width: $breakpoint-lg) {
@@ -52,11 +45,17 @@
 
 		&__content {
 			text-align: left;
-			max-width: 600px;
+			max-width: 680px;
 		}
 
 		&__title {
 			margin-block-end: 2.5rem;
+			white-space: nowrap;
+		}
+
+		&__title-decoration {
+			display: inline-block;
+			margin-inline-start: .5ch;
 		}
 	}
 

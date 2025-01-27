@@ -3,8 +3,6 @@
 .projects-section {
 	margin-block-end: 4rem;
 	&__title {
-		font-size: $step-10;
-		text-align: center;
 		margin-block-end: 2rem;
 	}
 }
@@ -23,6 +21,7 @@
 
 	&__number {
 		font-size: $step-10;
+		margin-inline-end: 2rem;
 	}
 
 	&__title {
@@ -65,7 +64,7 @@
 	.projects-section {
 		margin-block-end: 12rem;
 		&__title {
-			text-align: left;
+			text-align: center;
 		}
 	}
 	.project {
@@ -75,6 +74,7 @@
 			grid-row: 1 / 4;
 			align-self: center;
 			margin-inline-start: 3rem;
+			margin-inline-end: 0;
 		}
 		&__title {
 			grid-column: 2 / 3;

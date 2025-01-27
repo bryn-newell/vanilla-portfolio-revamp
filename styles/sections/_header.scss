@@ -19,6 +19,7 @@
 	&__content {
 		font-size: 1rem;
 		padding-block-start: 12rem;
+		padding-block-end: 3rem;
 		padding-inline: 0;
 		width: 100%;
 	}
@@ -69,7 +70,7 @@
 		background-size: cover;
 		display: flex;
 		height: 100vh;
-		padding-bottom: 2rem;
+		padding-bottom: 3rem;
 		
 		&__image {
 			display: none;
@@ -81,10 +82,17 @@
 			justify-content: space-between;
 			display: flex;
 			gap: 3rem;
+			padding-block-end: 0;
+			max-width: 1600px;
+			margin-inline: auto;		
 		}
 
 		&__title {
 			white-space: nowrap;
+		}
+
+		&__decoration { 
+			display: inline-block;
 		}
 
 		.site-sections {

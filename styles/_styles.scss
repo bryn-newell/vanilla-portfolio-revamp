@@ -17,6 +17,11 @@ header, section, footer {
   padding-inline: 5%;
 }
 
+section, footer {
+  max-width: 1600px;
+  margin-inline: auto;
+}
+
 // Utils
 .sr-only {
   position: absolute;
