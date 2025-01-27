@@ -54,8 +54,14 @@
 		grid-column: 1 / 3;
 		font-family: "le murmure";
 		font-size: $step-2;
-		.decoration {
-			margin-inline-start: .5ch;
+		position: relative;
+		width: max-content;
+
+		&:after {
+			content: '—';
+			position: absolute;
+			display: inline-block;
+			right: -2.2rem;
 		}
 	}
 }
@@ -64,7 +70,8 @@
 	.projects-section {
 		margin-block-end: 12rem;
 		&__title {
-			text-align: center;
+			// to do - put this back when it aligns with the grid sitch below? 
+			// text-align: center;
 		}
 	}
 	.project {
