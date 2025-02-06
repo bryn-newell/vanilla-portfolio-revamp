@@ -1,6 +1,10 @@
 [
   {
-    "title": "From One Non-Expert to Another - Learning What I Didn't Know I Didn't Know"
+    "title": "From One Non-Expert to Another - Learning What I Didn't Know I Didn't Know",
+    "url": "non-expert"
   },
-  { "title": "A Request to Stop Saying Accessibility Is Hard" }
+  {
+    "title": "A Request to Stop Saying Accessibility Is Hard",
+    "url": "accessibility"
+  }
 ]

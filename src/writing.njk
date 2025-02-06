@@ -1,5 +1,13 @@
 ---
 layout: layout.njk
 ---
-
+<nav>
+  <p>i need breadcrumbs here</p>
+  <a href="/">go home</a>
+</nav>
 <h1> this is the writing page </h1>
+<ul>
+  {% for blog in writings %}
+    <li><a href="/writing/{{blog.url}}">{{ blog.title }}</a></li>
+  {% endfor %}
+</ul>

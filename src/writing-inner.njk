@@ -1,0 +1,9 @@
+---
+pagination:
+  data: writings
+  size: 1
+  alias: blog
+permalink: "writing/{{ blog.url | slugify }}/"
+---
+
+<h1>{{ blog.title }}</h1>
