@@ -1,13 +1,24 @@
 ---
 layout: layout.njk
 ---
-<nav>
-  <p>i need breadcrumbs here</p>
-  <a href="/">go home</a>
-</nav>
-<h1> this is the writing page </h1>
-<ul>
-  {% for blog in writings %}
-    <li><a href="/writing/{{blog.url}}">{{ blog.title }}</a></li>
-  {% endfor %}
-</ul>
+
+<section class="writingPage">
+  <!-- to do - figure out a way to make the breadcrumbs reusable? or do we just let styling be the reusable part -->
+  <nav>
+    <a href="/" class="breadcrumb link rosegold">return home</a>
+  </nav>
+  <h2 class="writingPage__header">writing</h2>
+  <section class="cardSection">
+    {% for blog in writings %}
+    <article class="card">
+      <h3>{{ blog.title }}</h3>
+      <div class="row">
+        <a href="/writing/{{ blog.url }}" class="card__link link rosegold">read more</a>
+        <p class="card__date">{{ blog.date }}</p>
+      </div>
+    </article>
+    {% endfor %}
+  </section>
+</section>
+
+{% include 'innerPageFooter.njk' %}
