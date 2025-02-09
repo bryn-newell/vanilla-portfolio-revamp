@@ -1,0 +1,11 @@
+@use '../variables' as *;
+
+.writingInner {
+  padding-block: 1.25rem;
+
+  &__heading {
+    font-family: 'Avenir';
+    font-size: $step-4;
+    margin-block-start: 1.5rem;
+  }
+}
