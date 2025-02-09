@@ -1,4 +1,4 @@
-@use '../variables' as * ;
+@use '../../variables' as *;
 
 .about {
 	margin-block-start: 2rem;
@@ -23,6 +23,7 @@
 	}
 
 	@media (min-width: $breakpoint-md) {
+
 		// to do - can this be fluid too? 
 		&__headshot {
 			height: 18rem;
@@ -33,7 +34,7 @@
 	}
 
 	@media (min-width: $breakpoint-lg) {
-		display: flex; 
+		display: flex;
 		padding-inline: 10%;
 		margin-block-start: 5rem;
 		margin-block-end: 8rem;

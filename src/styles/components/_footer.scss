@@ -1,0 +1,47 @@
+@use '../variables' as *;
+
+.footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-block-end: 2rem;
+
+  .bryn {
+    align-items: center;
+    display: flex;
+    font-family: 'le murmure';
+    font-size: 2rem;
+    gap: 4px;
+  }
+
+  &__year {
+    font-family: Avenir;
+    font-size: 1rem;
+    padding-block-end: 4px;
+  }
+
+  .social-links {
+    justify-content: center;
+
+    .logo {
+      fill: #000;
+    }
+  }
+
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+}
+
+.innerPage__footer {
+  background-color: $rose-gold;
+  color: #fff;
+  padding-block: 1.25rem;
+
+  .social-links .logo {
+    fill: #fff;
+  }
+}

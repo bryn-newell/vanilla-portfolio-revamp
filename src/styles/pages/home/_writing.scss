@@ -1,4 +1,4 @@
-@use '../variables' as * ;
+@use '../../variables' as *;
 
 .writing {
 	margin-block-end: 4rem;
@@ -16,7 +16,7 @@
 		color: #000;
 		font-size: $step-1;
 		font-weight: 500;
-		
+
 		&:not(:last-child) {
 			&:after {
 				content: "/";
@@ -24,6 +24,7 @@
 				margin-right: 0.5rem;
 			}
 		}
+
 		&-number {
 			color: $rose-gold;
 		}

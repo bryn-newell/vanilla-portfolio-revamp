@@ -1,7 +1,8 @@
-@use 'sections/header';
-@use 'sections/about';
-@use 'sections/writing';
-@use 'sections/projects';
-@use 'sections/resume';
-@use 'sections/footer';
-@use 'sections/socialLinks';
+@use 'pages/home/header';
+@use 'pages/home/about';
+@use 'pages/home/writing';
+@use 'pages/home/projects';
+@use 'pages/home/resume';
+@use 'components/footer';
+@use 'components/socialLinks';
+@use 'pages/writingPage';

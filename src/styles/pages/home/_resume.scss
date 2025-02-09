@@ -1,4 +1,4 @@
-@use '../variables' as * ;
+@use '../../variables' as *;
 
 .resume {
 	display: flex;
@@ -11,22 +11,24 @@
 	}
 
 	&__download {
-			border: 1px solid #000;
+		border: 1px solid #000;
+		color: #000;
+		display: block;
+		font-size: 1.25rem;
+		font-weight: 600;
+		height: fit-content;
+		letter-spacing: 1.5px;
+		padding: 15px 26px;
+
+		&:visited {
 			color: #000;
-			display: block;
-			font-size: 1.25rem;
-			font-weight: 600;
-			height: fit-content;
-			letter-spacing: 1.5px;
-			padding: 15px 26px;
-			&:visited {
-				color: #000;
-			}
-			&:hover {
-				text-decoration: none;
-				color: #FFF;
-				background-color: #000;
-			}
+		}
+
+		&:hover {
+			text-decoration: none;
+			color: #FFF;
+			background-color: #000;
+		}
 	}
 
 	@media (min-width: $breakpoint-md) {

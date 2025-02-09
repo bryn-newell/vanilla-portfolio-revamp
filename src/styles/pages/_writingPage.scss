@@ -1,0 +1,43 @@
+@use '../variables' as *;
+
+.writingPage {
+  padding-block: 1.25rem;
+
+  &__header {
+    color: $rose-gold;
+    font-family: 'le murmure';
+    margin-block-start: 1.5rem;
+    margin-block-end: 1rem;
+  }
+}
+
+.cardSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 0;
+}
+
+.card {
+  border: 1px solid $light-pink;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 186px;
+  padding: 0.75rem;
+
+  .row {
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+  }
+
+  &__link {
+    font-family: 'le murmure';
+    font-size: 1.5rem;
+  }
+
+  // to do - date a lighter color?
+}

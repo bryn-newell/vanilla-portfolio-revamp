@@ -13,11 +13,14 @@ section {
   scroll-margin-top: 5rem;
 }
 
-header, section, footer {
-  padding-inline: 5%;
+header,
+section,
+footer {
+  padding-inline: 1.25rem;
 }
 
-section, footer {
+section,
+footer {
   max-width: 1600px;
   margin-inline: auto;
 }
@@ -30,7 +33,7 @@ section, footer {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   border: 0;
 }
 
@@ -58,13 +61,35 @@ section, footer {
 
 .link {
   text-decoration: none;
-  &, &:visited {
-    color: #FFF;
+
+  &,
+  &:visited {
+    color: #fff;
   }
-  &:hover, &:focus {
+
+  &:hover,
+  &:focus {
     text-decoration: underline;
   }
-  &.rosegold, &.rosegold:visited {
+
+  &.rosegold,
+  &.rosegold:visited {
     color: $rose-gold;
   }
+}
+
+.breadcrumb {
+  font-family: 'le murmure';
+  font-size: 1.5rem;
+
+  &:before {
+    content: '<';
+    display: inline-block;
+    margin-right: 1ch;
+  }
+
+  &:hover &:before {
+    text-decoration: none;
+  }
+
 }
