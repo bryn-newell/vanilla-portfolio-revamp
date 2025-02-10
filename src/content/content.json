@@ -1,0 +1,5 @@
+{
+  "layout": "_article.njk",
+  "tags": "article",
+  "permalink": "writing/{{ page.fileSlug | slugify }}/"
+}
