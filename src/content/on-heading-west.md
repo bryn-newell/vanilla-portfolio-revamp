@@ -26,9 +26,9 @@ heading west makes “we have arrived” an active verb that means dirt being ki
 heading west is pulling over because I thought I saw something pretty 
 
 heading west is  
-	“do you hear that?”  
-	“what?”  
-	“nothing.”  
+&nbsp; “do you hear that?”  
+&nbsp; “what?”  
+&nbsp; “nothing.”  
 
 heading west is bringing two camp chairs  
 just in case there’s company to be found around the campfire  
