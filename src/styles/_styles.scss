@@ -16,13 +16,18 @@ section {
 header,
 section,
 footer {
-  padding-inline: 1.25rem;
+  padding-inline: $container-padding;
 }
 
 section,
 footer {
   max-width: 1600px;
   margin-inline: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 // Utils
@@ -38,7 +43,7 @@ footer {
 }
 
 .container {
-  padding-inline: 1.25rem;
+  padding-inline: $container-padding;
 }
 
 .flex {

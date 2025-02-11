@@ -7,6 +7,8 @@ $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 
+$container-padding: 1.25rem;
+
 // typography
 $step--1: clamp(0.8333rem, 0.7754rem + 0.2899vw, 1rem);
 $step-0: clamp(1rem, 0.913rem + 0.4348vw, 1.25rem);
