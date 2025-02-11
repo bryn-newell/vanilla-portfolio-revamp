@@ -37,12 +37,21 @@ footer {
   border: 0;
 }
 
+.container {
+  padding-inline: 1.25rem;
+}
+
 .flex {
   display: flex;
 
   &--col {
     flex-direction: column;
   }
+}
+
+// From CUBE CSS https://piccalil.li/blog/cube-css/ https://piccalil.li/blog/flow-utility/
+.flow>*+* {
+  margin-block-start: var(--flow-space, 1em);
 }
 
 // Shared

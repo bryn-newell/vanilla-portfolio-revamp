@@ -1,4 +1,5 @@
 @use '../variables' as *;
+@use '../mixins';
 
 .writingInner {
   padding-block: 1.25rem;
@@ -6,6 +7,13 @@
   &__heading {
     font-family: 'Avenir';
     font-size: $step-4;
-    margin-block-start: 1.5rem;
+    margin-block: 1.5rem;
+  }
+
+  .article {
+    ol {
+      @include mixins.flow;
+      padding-inline: 1.25rem;
+    }
   }
 }

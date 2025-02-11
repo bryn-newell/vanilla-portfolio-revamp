@@ -53,17 +53,18 @@ layout: layout.njk
 <section id="writing" class="writing">
   <h2 class="writing__title outline-font">writing</h2>
   <div class="writing__posts">
-    <a class="link"
-      href="https://medium.com/@bryn.newell/https-medium-com-bryn-newell-from-one-non-expert-to-another-fb31add2f3c6"
-      target="_blank" ref="noopener noreferrer">
-      <span class="link-number">01. </span>From One Non-Expert to Another -
-      Learning What I Didn't Know I Didn't Know
+
+    {% for article in collections.article %}
+    <a class="link" href={{ article.url }}>
+      <span class="link-number">0{{ loop.index }}. </span>
+      {{ article.data.title }}
     </a>
-    <a class="link" href="https://medium.com/@bryn.newell/a-request-to-stop-saying-accessibility-is-hard-7ff0314c3280"
-      target="_blank" ref="noopener noreferrer">
-      <span class="link-number">02. </span>A Request to Stop Saying
-      Accessibility Is Hard
+    {% endfor %}
+    <a class="link" href="/writing">
+      <span class="link-number">00.</span>
+      View all musings
     </a>
+
   </div>
 </section>
 
