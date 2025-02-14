@@ -37,10 +37,6 @@ hr {
   letter-spacing: 5ch;
   margin-block: $hr-spacing;
 
-  @media (min-width: $breakpoint-md) {
-    margin-block: $hr-spacing-large;
-  }
-
   &::before {
     content: '§ § §';
     // '⚡'

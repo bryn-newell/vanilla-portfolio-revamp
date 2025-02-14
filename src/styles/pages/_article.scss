@@ -25,10 +25,6 @@
 
   hr {
     margin-block-start: $hr-spacing;
-
-    @media (min-width: $breakpoint-md) {
-      margin-block-start: $hr-spacing-large;
-    }
   }
 
 }
