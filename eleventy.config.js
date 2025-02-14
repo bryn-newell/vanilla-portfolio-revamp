@@ -3,11 +3,5 @@
  */
 export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./assets");
-  eleventyConfig.addWatchTarget('./src/styles/');
-
-  return {
-    dir: {
-      input: 'src',
-    },
-  };
+  eleventyConfig.addWatchTarget('./styles/');
 };

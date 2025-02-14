@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently 'sass --watch src/styles:_site/css' 'npx @11ty/eleventy --serve'",
-    "build": "sass src/styles:_site/css && npx @11ty/eleventy"
+    "start": "concurrently 'sass --watch styles:_site/css' 'npx @11ty/eleventy --serve'",
+    "build": "sass styles:_site/css && npx @11ty/eleventy"
   },
   "keywords": [],
   "author": "Bryn Newell",
