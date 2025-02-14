@@ -7,7 +7,13 @@ $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 
+// to do - fluid spacing
 $container-padding: 1.25rem;
+$container-padding-large: 3rem;
+
+// to do - fluid spacing
+$hr-spacing: 2.5rem;
+$hr-spacing-large: 3.5rem;
 
 // typography
 $step--1: clamp(0.8333rem, 0.7754rem + 0.2899vw, 1rem);

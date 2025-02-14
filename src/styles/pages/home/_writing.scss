@@ -17,6 +17,16 @@
 		font-size: $step-1;
 		font-weight: 500;
 
+		// can't use my cute animation the way it's currently built here since a psuedo element can't line wrap
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+
+		&::before {
+			content: none;
+		}
+
 		&:not(:last-child) {
 			&:after {
 				content: "/";

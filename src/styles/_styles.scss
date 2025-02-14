@@ -1,4 +1,5 @@
 @use 'variables' as *;
+@use 'mixins';
 
 @font-face {
   font-family: 'le murmure';
@@ -29,6 +30,25 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+hr {
+  border: 0;
+  font-family: "le murmure";
+  letter-spacing: 5ch;
+  margin-block: $hr-spacing;
+
+  @media (min-width: $breakpoint-md) {
+    margin-block: $hr-spacing-large;
+  }
+
+  &::before {
+    content: '§ § §';
+    // '⚡'
+    display: block;
+    text-align: center;
+  }
+}
+
 
 // Utils
 .sr-only {
@@ -62,19 +82,24 @@ body {
 // Shared
 .outline-font {
   color: $rose-gold;
-  -webkit-text-fill-color: white;
+  -webkit-text-fill-color: #fff;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: $rose-gold;
   font-family: 'le murmure';
 
   &.black {
-    color: black;
-    -webkit-text-stroke-color: black;
+    color: #000;
+    -webkit-text-stroke-color: #000;
   }
 }
 
 .link {
   text-decoration: none;
+  position: relative;
+
+  &::before {
+    @include mixins.animatedUnderline;
+  }
 
   &,
   &:visited {
@@ -83,20 +108,28 @@ body {
 
   &:hover,
   &:focus {
-    text-decoration: underline;
+    &::before {
+      transform: scaleY(1);
+    }
   }
 
   &.rosegold,
   &.rosegold:visited {
     color: $rose-gold;
+
+    &::before {
+      background-color: $rose-gold;
+    }
   }
 }
 
-.breadcrumb {
+.breadcrumb.link {
   font-family: 'le murmure';
   font-size: 1.5rem;
 
   &:before {
+    all: unset;
+    background-color: transparent;
     content: '<';
     display: inline-block;
     margin-right: 1ch;
@@ -104,6 +137,21 @@ body {
 
   &:hover &:before {
     text-decoration: none;
+  }
+
+  &::after {
+    @include mixins.animatedUnderline;
+    background-color: $rose-gold;
+    // these are so that the back arrow is not underlined
+    left: 2ch;
+    width: calc(100% - 2ch);
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      transform: scaleY(1);
+    }
   }
 
 }

@@ -1,5 +1,7 @@
 @use '../../variables' as *;
 
+$site-sections-spacing: clamp(0.5625rem, 0.5408rem + 0.1087vw, 0.625rem);
+
 .header {
 	background: linear-gradient(#e0a6a4, $light-pink);
 	color: #fff;
@@ -42,8 +44,14 @@
 	font-family: "le murmure";
 	margin-block-start: 1rem;
 
-	.link:not(:last-child) {
-		margin-inline-end: clamp(0.5625rem, 0.5408rem + 0.1087vw, 0.625rem);
+	.link {
+		&::before {
+			background-color: #fff;
+		}
+
+		&:not(:last-child) {
+			margin-inline-end: $site-sections-spacing;
+		}
 	}
 }
 
@@ -104,6 +112,7 @@
 
 			.link:not(:last-child) {
 				margin-inline-end: 0;
+				margin-block-end: $site-sections-spacing;
 			}
 		}
 	}

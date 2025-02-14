@@ -3,3 +3,18 @@
     margin-block-start: var(--flow-space, 1em);
   }
 }
+
+@mixin animatedUnderline {
+  // note - the transform: scaleY(1) property still needs to be applied on hover. this alone isn't enough
+  background-color: #000;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transition: transform 0.3s cubic-bezier(.43, .23, .5, .89);
+  transform-origin: 0 0;
+  width: 100%;
+}
