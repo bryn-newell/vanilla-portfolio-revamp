@@ -1,11 +1,6 @@
 @use 'variables' as *;
 @use 'mixins';
 
-@font-face {
-  font-family: 'le murmure';
-  src: url('/assets/Le_Murmure.woff2') format('woff2');
-}
-
 html:focus-within {
   scroll-behavior: smooth;
 }

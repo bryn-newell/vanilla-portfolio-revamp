@@ -35,6 +35,7 @@
 
 	@media (min-width: $breakpoint-lg) {
 		display: flex;
+		flex-wrap: wrap;
 		padding-inline: 10%;
 		margin-block-start: 5rem;
 		margin-block-end: 8rem;

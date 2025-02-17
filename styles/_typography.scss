@@ -1,4 +1,14 @@
-@use 'variables' as * ;
+@use 'variables' as *;
+
+@font-face {
+  font-family: 'le murmure';
+  src: url('/assets/Le_Murmure.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'le murmure numbers';
+  src: url('/assets/subset-LeMurmure-Regular.woff2') format('woff2');
+}
 
 body {
   font-size: $step-0;
@@ -16,6 +26,9 @@ h2 {
   font-size: $step-10;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-weight: normal;
 }
