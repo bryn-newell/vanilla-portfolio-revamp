@@ -1,6 +1,7 @@
 ---
 title: 'on heading west'
 displayDate: 'Jul 25th, 2024'
+categories: ['musings', 'garden']
 ---
 
 ### I

@@ -2,6 +2,7 @@
 title: 'From One Non-Expert to Another — Learning What I Didn’t Know I Didn’t Know'
 date: '2019-10-19'
 displayDate: 'Oct 19th, 2019'
+categories: ['tech']
 ---
 
 My story is one you may have heard a few times — I went to school to study one thing, started doing that thing, stopped doing that thing, became motivated to learn how to code, stopped doing the first thing, and then went searching for a place that could teach me how to do the new thing (coding) instead. Now here I am in the midst of it all, still learning and starting out my shiny new career path as a software developer!

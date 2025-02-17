@@ -24,23 +24,28 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 2rem;
   min-height: 186px;
   padding: 0.75rem;
   max-width: 60ch;
 
   .row {
-    align-items: baseline;
+    align-items: flex-end;
     display: flex;
     justify-content: space-between;
-    margin-block-start: 1.25rem;
   }
 
   &__link {
     font-family: 'le murmure';
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 
-  // to do - date a lighter color?
+  &__date,
+  &__category {
+    text-align: right;
+    color: $text-secondary;
+  }
+
 }
 
 @media (min-width: $breakpoint-md) {

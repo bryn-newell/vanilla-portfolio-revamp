@@ -3,6 +3,7 @@ title: 'A Request to Stop Saying “Accessibility Is Hard”'
 # to do - this is showing up at UTC
 date: '2020-06-24'
 displayDate: 'June 24th, 2020'
+categories: ['tech']
 ---
 
 It’s not. Just learn it. The end.

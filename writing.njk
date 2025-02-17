@@ -13,14 +13,20 @@ layout: _innerPage.njk
 <section class="writingPage">
   <h2 class="writingPage__header">writing</h2>
   <section class="cardSection">
-    <!-- to do - sort the collections by date -->
-    {% for article in collections.article %}
+    {% for article in collections.article | reverse %}
     <article class="card">
       <h3>{{ article.data.title }}</h3>
       <div class="row">
         <a href={{ article.url }} class="card__link link rosegold">read more</a>
-        <!-- to do - use article.date and format instead -->
-        <p class="card__date">{{ article.data.displayDate }}</p>
+        <div>
+          <p class="card__category">
+            {% for category in article.data.categories %}
+            {{ category }} {% if not loop.last %} <span class="leMurmure">•</span> {% endif %}
+            {% endfor %}
+          </p>
+          <!-- to do - use article.date and format instead -->
+          <p class="card__date">{{ article.data.displayDate }}</p>
+        </div>
       </div>
     </article>
     {% endfor %}
