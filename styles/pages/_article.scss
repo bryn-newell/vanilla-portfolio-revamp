@@ -1,10 +1,6 @@
 @use '../variables' as *;
 @use '../mixins';
 
-.nav {
-  padding-block: 1.25rem;
-}
-
 .writingInner {
   max-width: 65ch;
 
@@ -15,12 +11,11 @@
   }
 
   .article {
+    padding-block-end: 3rem;
+
     ol {
       @include mixins.flow;
-      padding-inline: $container-padding;
     }
-
-    padding-block-end: 3rem;
   }
 
   hr {
