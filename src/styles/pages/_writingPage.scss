@@ -1,7 +1,8 @@
 @use '../variables' as *;
 
 .writingPage {
-  padding-block: 1.25rem;
+  padding-block-start: 1.25rem;
+  padding-block-end: 6rem;
 
   &__header {
     color: $rose-gold;
