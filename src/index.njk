@@ -81,5 +81,29 @@ layout: layout.njk
     <span aria-hidden="true">—</span>
     <span class="footer__year">{{ year }}</span>
   </div>
-  {% include 'socialLinks.html' %}
+  <div class="footer__internal-links">
+    <h4 class="footer__heading">places to wander here</h4>
+    <a href="/writing" class="link textSecondary">Writing</a>
+    <a href="/feed.xml" class="link textSecondary">RSS</a>
+  </div>
+  <div class="social-links">
+    <h4 class="footer__heading">other places</h4>
+    <a href="https://github.com/bryn-newell" target="_blank" ref="noopener noreferrer" class="social-links__link">
+      {% include 'icons/github.html' %}
+      <span class="link textSecondary">Github</span>
+    </a>
+    <a href="https://bsky.app/profile/bryn.codes" target="_blank" ref="noopener noreferrer" class="social-links__link">
+      {% include 'icons/bsky.html' %}
+      <span class="link textSecondary">Bluesky</span>
+    </a>
+    <a href="https://www.linkedin.com/in/bryn-newell/" target="_blank" ref="noopener noreferrer"
+      class="social-links__link">
+      {% include 'icons/linkedin.html' %}
+      <span class="link textSecondary">LinkedIn</span>
+    </a>
+  </div>
+  <div>
+    <p>say hi !</p>
+    <a href="mailto:bryn.codes@gmail.com" class="link rosegold">bryn.codes@gmail.com</a>
+  </div>
 </footer>

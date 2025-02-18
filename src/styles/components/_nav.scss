@@ -11,10 +11,6 @@
     grid-row: 2;
   }
 
-  .link {
-    width: max-content;
-  }
-
   &__home {
     grid-row: 1;
     font-family: 'le murmure';
@@ -26,7 +22,6 @@
       position: absolute;
       top: 50%;
       left: calc(100% + 1ch);
-      width: max-content;
       transform: translateY(-50%);
     }
 
