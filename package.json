@@ -16,5 +16,8 @@
     "@11ty/eleventy": "^3.0.0",
     "concurrently": "^9.1.0",
     "sass": "^1.83.4"
+  },
+  "devDependencies": {
+    "@11ty/eleventy-plugin-rss": "^2.0.3"
   }
 }
