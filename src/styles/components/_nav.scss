@@ -3,18 +3,22 @@
 .nav {
   align-items: center;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
   padding-block: 1.25rem;
 
   .breadcrumb {
+    grid-row: 2;
+  }
+
+  .link {
     width: max-content;
   }
 
   &__home {
+    grid-row: 1;
     font-family: 'le murmure';
     font-size: 1.8rem;
-    grid-column: 2 / 4;
-    justify-self: center;
     position: relative;
 
     &-detail {
@@ -35,4 +39,19 @@
     }
   }
 
+  // to do - there must be a better way to solve for this hidden "return home" not having enough space than a really specific media query
+  // grid-template-columns: repeat(auto-fit minmax()) maybe?
+  @media (min-width: 420px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+
+    .breadcrumb {
+      grid-row: 1;
+    }
+
+    &__home {
+      grid-column: 2 / 4;
+      justify-self: center;
+    }
+  }
 }
