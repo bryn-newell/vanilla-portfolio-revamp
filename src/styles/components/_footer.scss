@@ -61,12 +61,21 @@
 }
 
 
-.innerPage__footer {
+.innerPage__footer.footer {
   background-color: $rose-gold;
   color: #fff;
-  padding-block: 1.25rem;
+  padding-block: 2.5rem;
 
   .social-links .logo {
     fill: #fff;
+  }
+
+  .footer__heading,
+  .link {
+    color: #fff;
+
+    &::before {
+      background-color: #fff;
+    }
   }
 }

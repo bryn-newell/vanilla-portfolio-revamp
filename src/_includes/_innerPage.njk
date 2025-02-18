@@ -4,10 +4,5 @@ layout: "layout.njk"
 {{ content | safe }}
 
 <footer class="innerPage__footer footer">
-  <div class="bryn">
-    bryn newell
-    <span aria-hidden="true">—</span>
-    <span class="footer__year">{{ year }}</span>
-  </div>
-  {% include 'socialLinks.html' %}
+  {% include 'footerContent.njk' %}
 </footer>
