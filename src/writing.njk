@@ -14,7 +14,7 @@ layout: _innerPage.njk
   <h2 class="writingPage__header">writing</h2>
   <section class="cardSection">
     {% for article in collections.article | reverse %}
-    <article class="card">
+    <article class="card card__clickable">
       <h3>{{ article.data.title }}</h3>
       <div class="row">
         <a href={{ article.url }} class="card__link link rosegold">read more</a>

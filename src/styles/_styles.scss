@@ -73,10 +73,32 @@ hr {
 // Shared
 .outline-font {
   color: $rose-gold;
-  -webkit-text-fill-color: #fff;
+  -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: $rose-gold;
   font-family: 'le murmure';
+
+  // to do - these aren't working right but i wanna save the animations for later just in case
+  // position: relative;
+  // background-clip: text;
+
+  // &:before {
+  //   content: attr(data-title);
+  //   color: transparent;
+  //   position: absolute;
+  //   top: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   right: 0;
+  //   background: $rose-gold;
+  //   width: 0;
+  //   transition: width 1s ease-in;
+  //   background-clip: text;
+  // }
+
+  // &:hover:before {
+  //   width: 100%;
+  // }
 
   &.black {
     color: #000;
