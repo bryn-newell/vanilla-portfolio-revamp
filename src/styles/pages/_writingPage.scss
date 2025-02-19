@@ -47,6 +47,21 @@
     color: $text-secondary;
   }
 
+  &:hover,
+  &:focus,
+  &:focus-visible,
+  &:has(.card__link:hover),
+  &:has(.card__link:focus),
+  &:has(.card__link:focus-visible) {
+    outline: 1px solid $rose-gold;
+  }
+
+  &:hover {
+    .card__link:before {
+      transform: scaleY(1);
+    }
+  }
+
 }
 
 @media (min-width: $breakpoint-md) {
