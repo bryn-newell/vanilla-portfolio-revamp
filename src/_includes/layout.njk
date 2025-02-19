@@ -1,3 +1,7 @@
+{% set pageTitle = 'Bryn Newell | Full Stack Creative Developer' %}
+{% if title %}
+  {% set pageTitle = title + ' | Bryn Newell' %}
+{% endif %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,11 +13,19 @@
   <meta name="og:type" content="website">
   <meta name="author" content="Bryn Newell">
   <meta name="theme-color" content="#BC5652">
-  <meta name="title" content="Bryn Newell | Full Stack Creative Developer">
+  <meta name="title" content="{{ pageTitle }}">
+  {% if pageDescription %}
+  <meta name="description" content="{{ pageDescription }}">
+  {% else %}
   <meta name="description" content="The personal portfolio site of Bryn Newell">
+  {% endif %}
   <meta name="image" content="/assets/favicon.png">
-  <meta property="og:title" content="Bryn Newell | Full Stack Creative Developer">
+  <meta property="og:title" content="{{ pageTitle }}">
+  {% if pageDescription %}
+  <meta property="og:description" content="{{ pageDescription }}">
+  {% else %}
   <meta property="og:description" content="The personal portfolio site of Bryn Newell">
+  {% endif %}
   <meta property="og:image" content="/assets/favicon.png">
   <meta property="og:url" content="https://bryn.codes">
   <meta name="og:site_name" content="Bryn Newell | Full Stack Creative Devloper">
@@ -21,7 +33,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon.png" />
   <link rel="icon" href="/assets/favicon.png" />
   <link rel="stylesheet" href="/css/main.css" />
-  <title>Bryn Newell | Full Stack Creative Developer</title>
+  <title>{{ pageTitle }}</title>
 </head>
 
 <body>

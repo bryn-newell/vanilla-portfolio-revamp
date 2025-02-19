@@ -1,5 +1,6 @@
 ---
 title: 'on heading west'
+pageDescription: "on heading west | by Bryn Newell"
 displayDate: 'Jul 25th, 2024'
 categories: ['musings', 'garden']
 ---
