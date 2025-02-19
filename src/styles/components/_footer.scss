@@ -1,13 +1,19 @@
 @use '../variables' as *;
 
 .footer {
-  align-items: center;
   display: flex;
+  font-size: $step--1;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
   margin-block-start: auto;
   padding-block-end: 2rem;
   width: 100%;
+
+  &__heading {
+    color: #000;
+    font-size: $step-0;
+    font-weight: 500;
+  }
 
   .bryn {
     align-items: center;
@@ -23,27 +29,53 @@
     padding-block-end: 4px;
   }
 
+  &__internal-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
   .social-links {
+    flex-direction: column;
     justify-content: center;
+    gap: .5rem;
 
     .logo {
       fill: #000;
+      height: 1.5rem;
+    }
+
+    &__link {
+      align-items: center;
+      display: flex;
+      gap: 1rem;
+      text-decoration: none;
     }
   }
 
   @media (min-width: $breakpoint-md) {
-    flex-direction: row;
-    justify-content: space-between;
-
+    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
-.innerPage__footer {
+
+.innerPage__footer.footer {
   background-color: $rose-gold;
   color: #fff;
-  padding-block: 1.25rem;
+  padding-block: 2.5rem;
 
   .social-links .logo {
     fill: #fff;
+  }
+
+  .footer__heading,
+  .link {
+    color: #fff;
+
+    &::before {
+      background-color: #fff;
+    }
   }
 }
