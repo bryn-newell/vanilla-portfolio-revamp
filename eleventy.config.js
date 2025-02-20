@@ -23,7 +23,10 @@ export default function (eleventyConfig) {
     }
   });
   eleventyConfig.addPassthroughCopy("./src/assets");
+  eleventyConfig.addPassthroughCopy('./src/js/', 'js');
+
   eleventyConfig.addWatchTarget('./src/styles/');
+  eleventyConfig.addWatchTarget('./src/js/');
 
   return {
     dir: {

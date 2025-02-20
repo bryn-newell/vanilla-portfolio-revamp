@@ -1,5 +1,7 @@
 ---
 title: 'A Request to Stop Saying “Accessibility Is Hard”'
+# to do - can i create these programatically?
+pageDescription: "A Request to Stop Saying “Accessibility Is Hard” | by Bryn Newell"
 # to do - this is showing up at UTC
 date: '2020-06-24'
 displayDate: 'June 24th, 2020'

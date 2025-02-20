@@ -127,6 +127,10 @@ hr {
     }
   }
 
+  &:focus-visible {
+    outline-offset: 2px;
+  }
+
   &.rosegold,
   &.rosegold:visited {
     color: $rose-gold;
