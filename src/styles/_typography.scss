@@ -2,11 +2,13 @@
 
 @font-face {
   font-family: 'le murmure';
+  font-display: swap;
   src: url('/assets/Le_Murmure.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'le murmure numbers';
+  font-display: swap;
   src: url('/assets/subset-LeMurmure-Regular.woff2') format('woff2');
 }
 
@@ -19,7 +21,7 @@ body {
 
 h1 {
   font-family: 'le murmure';
-  font-size: $step-9;
+  font-size: $step-10;
 }
 
 h2 {
