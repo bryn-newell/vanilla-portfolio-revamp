@@ -9,7 +9,7 @@
   {
     "title": "Vidanta World",
     "date": "2023",
-    "description": "A new website for Vidanta World Resorts in Mexico. I was a part of the core development team that initially built out all of the content models through Contentstack and built out the components this custom data would be piped into. These models were mapped to reusable pages so content managers could change the copy, images, and order of components with complete freedom, while keeping the integrity of the designs across the site.",
+    "description": "A new website for Vidanta World Resorts in Mexico. I was a part of the core development team that initially built out all of the content models through Contentstack and developed the components this custom data would be piped into. These models were mapped to reusable pages so content managers could change the copy, images, and order of components with complete freedom, while keeping the integrity of the designs across the site.",
     "tools": ["React", "Contentstack", "Apollo", "GraphQL", "CSS"],
     "link": "https://www.vidantaworld.com/en"
   },
@@ -21,10 +21,10 @@
     "link": "https://rheumatology.org/"
   },
   {
-    "title": "Merrill Lynch Idea Builder",
-    "date": "2021 - 2022",
-    "description": "A platform to help investors find stocks, ETFs, and Mutual Funds to invest in that align with their personal beliefs and value systems. I was a part of the team that developed this platform from initial design, creating a whole new design-system and component library. I was especially focused on the project meeting WCAG 2.1 AAA standards and building out charts and data visualizations.",
-    "tools": ["Vue", "CSS", "Chart.js", "Three.js"],
+    "title": "Idea Builder",
+    "date": "2019-2020",
+    "description": "A platform for Merrill Lynch to help investors find stocks, ETFs, and Mutual Funds to invest in that align with their personal beliefs and value systems. I was a part of the team that developed this platform from initial design, creating a whole new design-system and component library. I was especially focused on the project meeting WCAG 2.1 AAA standards and building out charts and data visualizations.",
+    "tools": ["Vue", "CSS", "Chartist"],
     "link": "https://www.merrilledge.com/idea-builder"
   },
   {
