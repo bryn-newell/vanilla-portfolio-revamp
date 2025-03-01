@@ -45,6 +45,8 @@ $site-sections-spacing: clamp(0.5625rem, 0.5408rem + 0.1087vw, 0.625rem);
 	margin-block-start: 1rem;
 
 	.link {
+		text-decoration: none;
+
 		&::before {
 			background-color: #fff;
 		}

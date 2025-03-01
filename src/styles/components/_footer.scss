@@ -49,7 +49,10 @@
       align-items: center;
       display: flex;
       gap: 1rem;
-      text-decoration: none;
+
+      @media(hover) {
+        text-decoration: none;
+      }
     }
   }
 

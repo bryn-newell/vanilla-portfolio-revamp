@@ -81,6 +81,7 @@ hr {
   // to do - these aren't working right but i wanna save the animations for later just in case
   // position: relative;
   // background-clip: text;
+  // max-width: max-content;
 
   // &:before {
   //   content: attr(data-title);
@@ -108,13 +109,18 @@ hr {
 
 .link {
   display: inline-block;
-  text-decoration: none;
   position: relative;
   width: max-content;
 
-  &::before {
-    @include mixins.animatedUnderline;
+  @media (hover) {
+    text-decoration: none;
+
+    &::before {
+      @include mixins.animatedUnderline;
+    }
+
   }
+
 
   &,
   &:visited {

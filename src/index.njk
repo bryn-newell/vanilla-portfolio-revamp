@@ -51,7 +51,7 @@ layout: layout.njk
 </section>
 
 <section id="writing" class="writing">
-  <h2 class="writing__title outline-font">writing</h2>
+  <h2 class="writing__title outline-font" data-title="writing">writing</h2>
   <div class="writing__posts">
 
     {% for article in collections.article %}
@@ -71,7 +71,7 @@ layout: layout.njk
 {% include 'projects.njk' %}
 
 <section id="resume" class="resume">
-  <h2 class="resume__title outline-font">resume/cv</h2>
+  <h2 class="resume__title outline-font" data-title="resume">resume/cv</h2>
   <a href="/assets/BrynNewellResume.pdf" target="_blank" class="resume__download link" download>DOWNLOAD THE PDF</a>
 </section>
 
