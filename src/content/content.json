@@ -1,5 +1,9 @@
 {
   "layout": "_article.njk",
   "tags": "article",
-  "permalink": "writing/{{ page.fileSlug | slugify }}/"
+  "permalink": "writing/{{ page.fileSlug | slugify }}/",
+  "templateEngineOverride": "md",
+  "eleventyComputed": {
+    "pageDescription": "{{ title }} | by Bryn Newell"
+  }
 }
