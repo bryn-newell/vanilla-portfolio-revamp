@@ -110,8 +110,6 @@ But the best part about having your own personal website? If I want to keep chan
 
 ---
 
-** acknowledgements
-
 I would be remiss if I didn’t end this article with an especially big thank you to [Henry Desroches](https://bsky.app/profile/strange.website). He was the one that put the worm in my ear about a redesign (as well as designed the original site back in 2019), but he also introduced me to Eleventy, shared code snippets and tips, answered a million ~~stupid~~ questions when I got confused, and kept wonderful company over many hours and many a coffee shop ensuring I had an empathetic listening ear when I lost motivation or got stuck. He’s an invaluable resource, expert in this industry, and mostly I’m just grateful to call him my friend. 
 
 ** Henry didn’t even laugh at me when he reminded me how to do this over a literal phone call. 
