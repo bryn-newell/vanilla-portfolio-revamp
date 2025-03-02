@@ -1,5 +1,6 @@
 @use '../variables' as *;
 @use '../mixins';
+@use '../styles';
 
 .writingInner {
   max-width: 65ch;
@@ -26,6 +27,10 @@
 
   h2 {
     font-size: $step-3;
+  }
+
+  a {
+    @extend .link, .rosegold;
   }
 
 }
