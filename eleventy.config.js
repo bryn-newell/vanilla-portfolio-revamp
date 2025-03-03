@@ -1,5 +1,6 @@
 import { feedPlugin } from "@11ty/eleventy-plugin-rss"
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import markdownItFootnote from 'markdown-it-footnote'
 
 /**
  *  @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig
@@ -23,13 +24,16 @@ export default function (eleventyConfig) {
       }
     }
   });
+  eleventyConfig.addPlugin(syntaxHighlight);
+
   eleventyConfig.addPassthroughCopy("./src/assets");
   eleventyConfig.addPassthroughCopy('./src/js/', 'js');
 
   eleventyConfig.addWatchTarget('./src/styles/');
   eleventyConfig.addWatchTarget('./src/js/');
+  eleventyConfig.addWatchTarget('./src/content/');
 
-  eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItFootnote));
 
   return {
     dir: {

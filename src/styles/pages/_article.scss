@@ -33,4 +33,16 @@
     @extend .link, .rosegold;
   }
 
+  p:has(small) {
+    color: $text-secondary;
+    font-size: $step--1;
+    margin-block-start: 0;
+    text-align: right;
+  }
+
+  .footnotes {
+    color: $text-secondary;
+    font-size: $step--1;
+  }
+
 }
