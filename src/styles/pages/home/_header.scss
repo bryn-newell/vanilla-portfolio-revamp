@@ -64,10 +64,7 @@ $site-sections-spacing: clamp(0.5625rem, 0.5408rem + 0.1087vw, 0.625rem);
 		}
 
 		&__description {
-			// to do - make this not a magic number
-			// actually past bryn, it's staying a magic number for now.
-			// it's in one singular spot and makes sense. exceptions are allowed
-			max-width: 534px;
+			max-width: 60ch;
 		}
 	}
 }

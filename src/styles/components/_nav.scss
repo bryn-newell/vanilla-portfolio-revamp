@@ -28,8 +28,10 @@
     &:hover {
       .nav__home-detail {
         opacity: 1;
-        // to do - update this cubic bezier to... something else
-        transition: opacity 0.3s cubic-bezier(.43, .23, .5, .89);
+
+        @media not (prefers-reduced-motion: reduce) {
+          transition: opacity 0.3s ease-in-out;
+        }
       }
     }
   }
