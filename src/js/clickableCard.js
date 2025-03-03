@@ -20,6 +20,7 @@ const clickableCard = () => {
 
 };
 
-window.onload = () => {
+document.addEventListener("DOMContentLoaded", () => {
   clickableCard();
-}
+});
+
