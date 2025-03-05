@@ -1,15 +1,13 @@
 ---
-title: 'Brave New Static Site World'
-subtitle: 'A purposeful abandoning of Vue in favor of Eleventy'
+title: 'Swapping from Vue to Elevnty'
 date: '2025-03-01'
 displayDate: 'March 1st, 2025'
 categories: ['tech']
 # to do - this one is mad because of the template override I think
 templateEngineOverride: "11ty.js,md"
-permalink: 'writing/eleventy/index.hml'
+permalink: 'writing/vue-to-11ty/index.hml'
+featured: true
 ---
-
-## A purposeful abandoning of Vue in favor of Eleventy
 
 \* a heads up - I have a bit of a sailor’s mouth and have opted to not censor myself anymore. If you’d like the censored version you can click here. 
 
