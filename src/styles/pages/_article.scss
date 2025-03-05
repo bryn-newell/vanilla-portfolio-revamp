@@ -9,8 +9,12 @@
 
   &__heading {
     font-family: 'Avenir';
-    font-size: $step-4;
+    font-size: $step-3;
     margin-block: 1.5rem;
+  }
+
+  &__spacer {
+    margin-block-start: 64px;
   }
 
   .article {
@@ -26,7 +30,7 @@
   }
 
   h2 {
-    font-size: $step-3;
+    font-size: $step-2;
   }
 
   a {

@@ -10,7 +10,14 @@ layout: "_innerPage.njk"
 </nav>
 
 <section class="writingInner">
+  {% if not hideTitle %}
   <h1 class="writingInner__heading">{{ title }}</h1>
+  {% endif %}
+
+  {% if hideTitle %}
+  <div class="writingInner__spacer"></div>
+  {% endif %}
+
   <article class="article flow">
     {{ content | safe }}
   </article>
