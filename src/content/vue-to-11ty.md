@@ -1,5 +1,5 @@
 ---
-title: 'Swapping from Vue to Elevnty'
+title: 'Swapping from Vue to Eleventy'
 date: '2025-03-01'
 displayDate: 'March 1st, 2025'
 categories: ['tech']
