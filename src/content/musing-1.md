@@ -1,7 +1,7 @@
 ---
 title: 'a musing'
 date: '2025-03-05'
-# displayDate: 'Jul 25th, 2024'
+displayDate: 'March 5th, 2025'
 categories: ['musings', 'garden']
 hideTitle: true
 ---
