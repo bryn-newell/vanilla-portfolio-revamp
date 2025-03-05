@@ -1,7 +1,6 @@
 ---
 title: 'Swapping from Vue to Eleventy'
 date: '2025-03-01'
-displayDate: 'March 1st, 2025'
 categories: ['tech']
 # to do - this one is mad because of the template override I think
 templateEngineOverride: "11ty.js,md"

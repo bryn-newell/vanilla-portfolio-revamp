@@ -1,7 +1,6 @@
 ---
 title: 'From One Non-Expert to Another — Learning What I Didn’t Know I Didn’t Know'
 date: '2019-10-19'
-displayDate: 'Oct 19th, 2019'
 categories: ['tech']
 ---
 

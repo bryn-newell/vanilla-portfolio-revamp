@@ -1,6 +1,7 @@
 import { feedPlugin } from "@11ty/eleventy-plugin-rss"
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import markdownItFootnote from 'markdown-it-footnote'
+import { formatDate } from './src/js/formatDate.js';
 
 /**
  *  @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig
@@ -34,6 +35,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addWatchTarget('./src/content/');
 
   eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItFootnote));
+
+  eleventyConfig.addFilter('formatDate', formatDate)
 
   return {
     dir: {

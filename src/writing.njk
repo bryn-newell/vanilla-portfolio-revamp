@@ -19,15 +19,14 @@ pageDescription: Writings and musings by Bryn Newell
     <article class="card card__clickable">
       <h3>{{ article.data.title }}</h3>
       <div class="row">
-        <a href={{ article.url }} class="card__link link rosegold">read more</a>
+        <a href="{{ article.url }}" class="card__link link rosegold">read more</a>
         <div>
           <p class="card__category">
             {% for category in article.data.categories %}
             {{ category }} {% if not loop.last %} <span class="leMurmure">•</span> {% endif %}
             {% endfor %}
           </p>
-          <!-- to do - use article.date and format instead -->
-          <p class="card__date">{{ article.data.displayDate }}</p>
+          <p class="card__date">{{ article.data.date | formatDate }}</p>
         </div>
       </div>
     </article>
