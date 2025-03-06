@@ -16,16 +16,15 @@
   <meta name="title" content="{{ pageTitle }}">
   {% if pageDescription %}
   <meta name="description" content="{{ pageDescription }}">
+  <meta property="og:description" content="{{ pageDescription }}">
+  <meta name="twitter:description" content="{{ pageDescription }}">
   {% else %}
   <meta name="description" content="The personal portfolio site of Bryn Newell">
+  <meta property="og:description" content="The personal portfolio site of Bryn Newell">
+  <meta name="twitter:description" content="The personal portfolio site of Bryn Newell">
   {% endif %}
   <meta name="image" content="/assets/favicon.png">
   <meta property="og:title" content="{{ pageTitle }}">
-  {% if pageDescription %}
-  <meta property="og:description" content="{{ pageDescription }}">
-  {% else %}
-  <meta property="og:description" content="The personal portfolio site of Bryn Newell">
-  {% endif %}
   <meta property="og:image" content="/assets/favicon.png">
   <meta property="og:url" content="https://bryn.codes">
   <meta name="og:site_name" content="Bryn Newell | Full Stack Creative Devloper">
@@ -34,7 +33,6 @@
   <meta property="twitter:domain" content="bryn.codes">
   <meta property="twitter:url" content="https://bryn.codes">
   <meta name="twitter:title" content="Bryn Newell | Full Stack Creative Developer">
-  <meta name="twitter:description" content="{{ pageDescription }}">
   <meta name="twitter:image" content="/assets/favicon.png">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon.png" />
@@ -48,6 +46,7 @@
 <body>
   {{ content | safe }}
   <script src="/js/clickableCard.js"></script>
+  <script src="/js/censorContent.js"></script>
 </body>
 
 </html>

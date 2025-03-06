@@ -159,6 +159,13 @@ blockquote p {
   }
 }
 
+button.link {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+}
+
 .breadcrumb.link {
   font-family: 'le murmure';
   font-size: 1.8rem;

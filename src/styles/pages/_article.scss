@@ -44,6 +44,15 @@
     text-align: right;
   }
 
+  .censored {
+    filter: blur(3.5px);
+    user-select: none;
+  }
+
+  .note {
+    font-size: $step--1;
+  }
+
   .footnotes {
     color: $text-secondary;
     font-size: $step--1;
