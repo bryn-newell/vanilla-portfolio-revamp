@@ -4,7 +4,7 @@ date: '2024-07-25'
 categories: ['musings', 'garden']
 ---
 
-<h2 class="leMurmure">I</h2>
+<h2 class="leMurmure center">I</h2>
 
 I didn’t come up with heading west  
 it doesn’t belong to me just like the colorado state lines certainly don’t belong to us.  
@@ -13,7 +13,8 @@ doubling a population with a tuberculosis diagnosis.
 but I don’t think it’s the lungs the mountain air cures,  
 I think it’s the mind.  
 
-<h2 class="leMurmure">II</h2>
+<br />
+<h2 class="leMurmure center">II</h2>
 
 my mind is a slide show, moving too fast to pick out a single image.  
 heading west it becomes the minutes that feel like hours, admiring every brush stroke of one of the water lillies in a gallery
