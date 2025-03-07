@@ -3,6 +3,11 @@
 .writing {
 	margin-block-end: 4rem;
 
+	&__title-container {
+		display: flex;
+		justify-content: center;
+	}
+
 	&__title {
 		margin-block-end: 2rem;
 	}
