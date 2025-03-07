@@ -60,12 +60,61 @@
     }
   }
 
+  &--featured {
+    position: relative;
+
+    .card__featured-designation {
+      color: $rose-gold;
+      font-size: $step-5;
+      font-family: 'le murmure';
+      top: .75rem;
+      right: .75rem;
+      position: absolute;
+    }
+  }
+
 }
 
 @media (min-width: $breakpoint-md) {
   .cardSection {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
+    // styles i'm not keeping but can't bring myself to delete
+    // grid-template-columns: repeat(10, 1fr);
+    // grid-template-rows: auto;
+    // grid-template-areas:
+    //   "left left left centralWide centralWide centralWide centralWide centralWide right right"
+    //   "left left left central central central centralSmall centralSmall right right"
+    // ;
+
+    // :nth-child(1) {
+    //   grid-area: left;
+    // }
+
+    // :nth-child(2) {
+    //   grid-area: centralWide;
+    // }
+
+    // :nth-child(3) {
+    //   grid-area: right;
+    // }
+
+    // :nth-child(4) {
+    //   grid-area: central;
+    // }
+
+    // :nth-child(5) {
+    //   grid-area: centralSmall;
+    // }
+
+    // :nth-child(6) {
+    //   grid-row: 3;
+    // }
+
+    // :nth-child(7) {
+    //   grid-row: 3;
+    // }
     // grid-template-rows: masonry;
   }
 }
