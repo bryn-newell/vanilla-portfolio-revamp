@@ -28,8 +28,7 @@ of its warm, dusty bark
 <br />
 <h2 class="leMurmure center">III</h2>
 
-<!-- to do - is pine right??? -->
-one of the best parts about living in colorado is that pine trees never lose their leaves  
+one of the best parts about living in colorado is that conifer trees never lose their leaves  
 those evergreen forests holding their name sake and keeping us company through the cold months  
 but the day after it snows when the sky clears  
 and before the sun comes back to melt it all off  
