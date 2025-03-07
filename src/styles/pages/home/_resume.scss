@@ -8,7 +8,8 @@
 
 	&__title {
 		margin-block-end: 2rem;
-		line-height: 61%;
+		// this fix is prettier with align-items baseline but it doesn't work with the outline fill
+		// line-height: 61%;
 		white-space: nowrap;
 	}
 
@@ -35,7 +36,7 @@
 	}
 
 	@media (min-width: $breakpoint-md) {
-		align-items: flex-end;
+		align-items: center;
 		flex-direction: row;
 		justify-content: space-between;
 		gap: 2rem;

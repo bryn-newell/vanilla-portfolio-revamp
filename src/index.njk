@@ -30,8 +30,9 @@ layout: layout.njk
     alt="a photo of bryn, a white woman with blonde hair holding up a peace sign in front of an aspen forest."
     class="about__headshot" />
   <div class="about__content">
-    <h2 class="about__title outline-font" data-title="about me">
-      about me<span class="about__title-decoration" aria-hidden="true">—</span>
+    <h2 class="about__title outline-font" data-title="about me" reveal>
+      about me
+      <span class="about__title-decoration" aria-hidden="true">—</span>
     </h2>
     <p>
       I'm passionate about the a11y community and using tech to bring people
@@ -51,11 +52,13 @@ layout: layout.njk
 </section>
 
 <section id="writing" class="writing">
-  <h2 class="writing__title outline-font" data-title="writing">writing</h2>
+  <div class="writing__title-container">
+    <h2 class="writing__title outline-font" data-title="writing" reveal>writing</h2>
+  </div>
   <div class="writing__posts">
 
     {% for article in collections.article %}
-    <a class="link" href={{ article.url }}>
+    <a class="link" href="{{ article.url }}">
       <span class="link-number">0{{ loop.index }}. </span>
       {{ article.data.title }}
     </a>
@@ -71,7 +74,7 @@ layout: layout.njk
 {% include 'projects.njk' %}
 
 <section id="resume" class="resume">
-  <h2 class="resume__title outline-font" data-title="resume">resume/cv</h2>
+  <h2 class="resume__title outline-font" data-title="resume/cv" reveal>resume/cv</h2>
   <a href="/assets/BrynNewellResume.pdf" target="_blank" class="resume__download link" download>DOWNLOAD THE PDF</a>
 </section>
 

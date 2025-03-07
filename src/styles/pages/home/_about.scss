@@ -16,6 +16,7 @@
 
 	&__title {
 		margin-block-end: 1rem;
+		white-space: nowrap;
 
 		&-decoration {
 			display: none;
@@ -29,8 +30,6 @@
 			height: 18rem;
 			width: 18rem;
 		}
-
-
 	}
 
 	@media (min-width: $breakpoint-lg) {
@@ -52,7 +51,6 @@
 
 		&__title {
 			margin-block-end: 2.5rem;
-			white-space: nowrap;
 		}
 
 		&__title-decoration {
