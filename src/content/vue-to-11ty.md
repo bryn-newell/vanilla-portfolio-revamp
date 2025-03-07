@@ -4,7 +4,7 @@ date: '2025-03-01'
 categories: ['tech']
 # to do - this one is mad because of the template override I think
 templateEngineOverride: "11ty.js,md"
-permalink: 'writing/vue-to-11ty/index.hml'
+permalink: 'writing/vue-to-11ty/index.html'
 featured: true
 ---
 
