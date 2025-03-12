@@ -140,9 +140,15 @@ blockquote p {
     outline-offset: 2px;
   }
 
+  &:active {
+    text-decoration-color: #000;
+  }
+
   &.rosegold,
-  &.rosegold:visited {
+  &.rosegold:visited,
+  &.rosegold:active {
     color: $rose-gold;
+    text-decoration-color: $rose-gold;
 
     &::before {
       background-color: $rose-gold;
@@ -152,6 +158,7 @@ blockquote p {
   &.textSecondary,
   &.textSecondary:visited {
     color: $text-secondary;
+    text-decoration-color: $text-secondary;
 
     &::before {
       background-color: $text-secondary;

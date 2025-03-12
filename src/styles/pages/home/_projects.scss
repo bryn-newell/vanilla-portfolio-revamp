@@ -21,17 +21,17 @@
 	}
 
 	&__number {
-		align-self: flex-end;
+		align-self: last baseline;
 		font-size: $step-10;
 		margin-inline-end: 2rem;
 		font-family: "le murmure numbers";
 	}
 
 	&__title {
+		align-self: last baseline;
 		font-size: $step-7;
 		font-family: "le murmure";
 		grid-column: 2 / 4;
-		align-self: flex-end;
 	}
 
 	&__date {
