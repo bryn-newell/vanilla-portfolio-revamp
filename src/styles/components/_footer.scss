@@ -59,7 +59,8 @@
   @media (min-width: $breakpoint-md) {
     align-items: flex-start;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(100px, 500px));
+    justify-content: center;
   }
 }
 
@@ -68,6 +69,7 @@
   background-color: $rose-gold;
   color: #fff;
   padding-block: 2.5rem;
+  max-width: unset;
 
   .social-links .logo {
     fill: #fff;
