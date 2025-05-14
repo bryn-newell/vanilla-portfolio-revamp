@@ -47,6 +47,11 @@
 		}
 	}
 
+		&__page-link.link {
+		display: block;
+		margin-inline: auto;
+	}
+
 	@media (min-width: $breakpoint-md) {
 		margin-block-end: 12rem;
 		text-align: center;

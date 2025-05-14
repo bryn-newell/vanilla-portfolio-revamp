@@ -38,6 +38,10 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addFilter('formatDate', formatDate)
 
+  eleventyConfig.addCollection("limitArticles", (collectionsApi) => {
+		return collectionsApi.getFilteredByTag("article").reverse().slice(0,6)
+	});
+
   return {
     dir: {
       input: 'src',

@@ -3,7 +3,6 @@ const DISTANCE_FROM_BOTTOM_TO_REVEAL = `200px`;
 
 const revealHandler = (entries, observer) => {
   entries.forEach((entry) => {
-    console.log(entry, entry.isIntersecting, entry.target.hasAttribute(ATTRIBUTE_NAME))
     if (entry.isIntersecting && entry.target.hasAttribute(ATTRIBUTE_NAME)) {
       entry.target.classList.add('revealed');
       // only reveal once
