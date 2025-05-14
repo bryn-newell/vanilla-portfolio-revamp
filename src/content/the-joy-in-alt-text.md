@@ -16,11 +16,11 @@ Now I could go in depth about the reasons why alt text should always be provided
 My dear friend [Henry](https://henry.codes/) has always been walking this walk. He’s hilarious and quite witty, especially on [Bluesky](https://bsky.app/profile/strange.website), but every once in a while I don't get the joke. Luckily for me he posts really thorough content in his [alt text](https://bsky.app/profile/strange.website/post/3lefinli7zs2u), and every time it gives me the context I need to enter the inner circle of The Bit. Sometimes the alt text itself holds something even more clever (in my opinion) and I get a bigger kick out of it than the main image or post itself. This is exactly what I want more of us to strive for. It’s fun and it’s funny and it broadens the possibility of getting your joke across.
 
 ![a post on bluesky from henry (@strange.website) that reads "i gotta hand it to you boys this is absolutey devious work. it includes a screenshot of the Discord UI where it shows how many voice slots are filled, and as henry will later mention in his alt text, the "15" indicator is egregiously unbalanced in its container"](/assets/articles/bsky.jpg)
+
 <figure>
 <img src="/assets/articles/bsky-2.jpg" alt="a screenshot of the alt text included in henry's post that reads 'A Discord UI showing how many voice slots are filled of the available 15 slots for each channel. The '15' indicator is egregiously unbalanced in its container. Forehead slappingly unbalanced bro.'" />
 <figcaption><a href="https://bsky.app/profile/strange.website/post/3ln4n4isr7s2a">https://bsky.app/profile/strange.website/post/3ln4n4isr7s2a</a></figcaption>
 </figure>
-
 
 ---
 
@@ -28,7 +28,7 @@ One of my favorite experiences with alt text in an unusual shape came whilst on 
 
 ---
 
-Back when the Clock App (Tiktok) was at risk of being shut down completely in the US, many had the valid concern wondering how these cultural moments were to be saved for posterity? A friend of a friend had the inspiration to create a [book of TikToks](https://www.amazon.com/Small-Book-TikToks-collection-important/dp/B0DSL6MKRR). He decided to go through a handful of the most viral TikToks of all time, write them down in paragraph form (of course) and publish it as a book. It’s absolutely hilarious to flip through and try to figure out which video each page is referring to. And whether you know the original video or not, the joke, or at least the enjoyment of some goofy internet content comes across. Joyful and unique alt text strikes once again!
+Back when the Clock App (Tiktok) was at risk of being shut down completely in the US, many had the valid concern wondering how these cultural moments were to be saved for posterity. A friend of a friend had the inspiration to create a [book of TikToks](https://www.amazon.com/Small-Book-TikToks-collection-important/dp/B0DSL6MKRR). He decided to go through a handful of the most viral TikToks of all time, write them down in paragraph form (of course) and publish it as a book. It’s absolutely hilarious to flip through and try to figure out which video each page is referring to. And whether you know the original video or not, the joke, or at least the enjoyment of some goofy internet content comes across. Joyful and unique alt text strikes once again!
 
 ---
 
@@ -38,15 +38,13 @@ A few weeks ago I was at [All Day Hey](https://heypresents.com/) and [Lola Odelo
 
 So the next time you’re struggling to writing alt text or a description for a video, instead of just hitting the basic criterion, ask yourself -
 
-How would I describe this to a friend over the phone?  
+How would I describe this to a friend over the phone?
 
-My friend hasn't seen the video I'm trying to reference and I can't pull it up while operating a motor vehicle, how do I articulate it so that they still get the joke?  
+My friend hasn't seen the video I'm trying to reference and I can't pull it up while operating a motor vehicle, how do I articulate it so that they still get the joke?
 
-If this were hanging in a museum in front of me and I asked the person across from me to close their eyes, how would I depict the way this piece of art makes me feel? 
+If this were hanging in a museum in front of me and I asked the person across from me to close their eyes, how would I depict the way this piece of art makes me feel?
 
 Alt text can and should be whimsy. It can be fun to create and fun to read. Not only do your users that can’t access your images, for whatever reason, deserve to be considered, they deserve to be included. And users who don’t “need” the alt text deserve to consider why it might expand their enjoyment or understanding of your content too.
-
-
 
 ![Robb's (@robbowen.digital on Bluesky) alt text selfie which reads "Robb sits in a room painted in shades of disrupted sleep and red velvet. He is amongst friends, drifting between the embers of his second coffee and the spark of a third"](/assets/articles/bsky-3.png)
 
