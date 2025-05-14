@@ -10,11 +10,19 @@
   &__heading {
     font-family: 'Avenir';
     font-size: $step-3;
-    margin-block: 1.5rem;
+    margin-block-start: 1.5rem;
+    margin-block-end: .5rem;
+  }
+
+  &__date {
+    color: $text-secondary;
+    display: inline-block;
+    font-size: $step--1;
+    margin-block-end: 2rem;
   }
 
   &__spacer {
-    margin-block-start: 64px;
+    margin-block-start: 2rem;
   }
 
   .article {
@@ -42,6 +50,22 @@
     font-size: $step--1;
     margin-block-start: 0;
     text-align: right;
+  }
+
+  img, figure {
+    border-radius: 4px;
+    max-width: 500px;
+    margin-inline: auto;
+  }
+
+  figure:has(figcaption) {
+    img {
+      margin-block-end: .5rem;
+    }
+  }
+
+  figcaption {
+    font-size: $step--1;
   }
 
   .censored {

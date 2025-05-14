@@ -5,7 +5,6 @@ categories: ['tech']
 # to do - this one is mad because of the template override I think
 templateEngineOverride: "11ty.js,md"
 permalink: 'writing/vue-to-11ty/index.html'
-featured: true
 ---
 
 <p class="note">* a heads up - I have a bit of a sailor’s mouth (by corporate standards) and have opted to not censor myself anymore. <span class="censor-sentence">If you’d like the censored version you can </span><button class="link rosegold" id="censorship-button">click here.</button></p>
