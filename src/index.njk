@@ -59,9 +59,9 @@ layout: layout.njk
 
     <a class="link writing__page-link" href="/writing">
       <span class="link-number">00.</span>
-      view all writing
+      view all
     </a>
-    
+
     {% for article in collections.limitArticles %}
     <a class="link" href="{{ article.url }}">
       <span class="link-number">0{{ loop.index }}. </span>

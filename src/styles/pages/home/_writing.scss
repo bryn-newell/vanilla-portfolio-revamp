@@ -50,6 +50,7 @@
 		&__page-link.link {
 		display: block;
 		margin-inline: auto;
+		margin-block-end: .5rem;
 	}
 
 	@media (min-width: $breakpoint-md) {
