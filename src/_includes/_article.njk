@@ -17,6 +17,7 @@ layout: "_innerPage.njk"
   {% if hideTitle %}
   <div class="writingInner__spacer"></div>
   {% endif %}
+  <time datetime={{date}} class="writingInner__date">{{ date | formatDate }}</time>
 
   <article class="article flow">
     {{ content | safe }}

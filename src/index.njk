@@ -57,7 +57,7 @@ layout: layout.njk
   </div>
   <div class="writing__posts">
 
-    {% for article in collections.article %}
+    {% for article in collections.article | reverse %}
     <a class="link" href="{{ article.url }}">
       <span class="link-number">0{{ loop.index }}. </span>
       {{ article.data.title }}

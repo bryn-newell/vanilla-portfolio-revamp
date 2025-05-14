@@ -1,7 +1,7 @@
 ---
 title: 'A Request to Stop Saying “Accessibility Is Hard”'
 date: '2020-06-24'
-categories: ['tech']
+categories: ['tech', 'accessibility']
 ---
 
 It’s not. Just learn it. The end.
