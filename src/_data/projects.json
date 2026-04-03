@@ -1,24 +1,38 @@
 [
   {
+    "title": "Bliss Film",
+    "date": "2026",
+    "description": "A reinvigoration of the Bliss Film Production Company's website. As their team went through an evolution, we shifted the brand styles to feel more cohesive, as well as focused in on the many works Bliss has produced, and showcase what's previewing at upcoming festivals.",
+    "tools": ["HTML", "CSS/SCSS", "11ty", "Njk"],
+    "link": "https://bliss.film/"
+  },
+  {
+    "title": "Courtesy Moto",
+    "date": "2026",
+    "description": "A home for the up and coming motorcycle hub and historic space in the Five Points Neighborhood of Denver, Colorado. This was a full design and build for a coming soon page, as well a more layered commerce and scheduling platform, while helping this new local business find their brand and identity, without losing the fun and love of motorcycles.",
+    "tools": ["HTML", "CSS/SCSS", "11ty", "Njk"],
+    "link": "https://courtesymotoco.com/"
+  },
+  {
+    "title": "Chessiverse Audit",
+    "date": "2025",
+    "description": "A full audit of accessibility concerns and the user experience of the Chessiverse dashboard, courses, and gameplay overview. I provided visual feedback, documentation, and specific suggested fixes.",
+    "tools": ["WCAG", "Figma"],
+    "link": "https://chessiverse.com/dashboard"
+  },
+  {
     "title": "My Epic App",
     "date": "2021 - 2023",
-    "description": "A completely new design and rebuild of the Vail Ski Resort’s My Epic mobile application. In tandem with Vail’s data and infrastructure, we introduced a new and innovative way for skiers to interact with over 30+ ski resorts and manage their Epic pass. My primary focus was on developing the SVG map, including custom styling and animated interactions, as well the development of trails and lifts pages and data, and ensuring clean user experience throughout.",
+    "description": "A complete redesign and rebuild of Vail Ski Resort’s My Epic mobile app. In tandem with Vail’s infrastructure, we introduced a new and innovative way for skiers to interact with over 30+ ski resorts and manage their Epic pass. My primary focus was on developing the SVG map, including custom styling and animated interactions, as well the development of trails and lifts pages and data, and ensuring clean user experience throughout.",
     "tools": ["React Native", "Bluetooth", "SVG", "Skia"],
     "link": "https://www.epicpass.com/app.aspx"
   },
   {
     "title": "Vidanta World",
     "date": "2023",
-    "description": "A new website for Vidanta World Resorts in Mexico. I was a part of the core development team that initially built out all of the content models through Contentstack and developed the components this custom data would be piped into. These models were mapped to reusable pages so content managers could change the copy, images, and order of components with complete freedom, while keeping the integrity of the designs across the site.",
+    "description": "A new website for Vidanta World Resorts in Mexico. I was a part of the initial development team that built out all of the content models through Contentstack and developed the custom components their data would be piped into. These models were mapped to reusable pages so content managers could change the copy, images, and order of components with complete freedom, while keeping the integrity of the designs across the site.",
     "tools": ["React", "Contentstack", "Apollo", "GraphQL", "CSS"],
     "link": "https://www.vidantaworld.com/en"
-  },
-  {
-    "title": "ACR",
-    "date": "2021 - 2022",
-    "description": "A full redesign and rebuild for the American College of Rheumatology. Leveraging Contentstack, we developed a suite of reusable page templates and content models and using GraphQL we automated the creation of dynamic pages. This allowed ACR to easily manage their content to better support doctors and clients with any number of condition pages and resources. The project began with a development team of five and gradually streamlined until I took over as the sole developer interacting with the client.",
-    "tools": ["React", "Contentstack", "Apollo", "GraphQL", "CSS"],
-    "link": "https://rheumatology.org/"
   },
   {
     "title": "Idea Builder",
@@ -26,21 +40,5 @@
     "description": "A platform for Merrill Lynch to help investors find stocks, ETFs, and Mutual Funds to invest in that align with their personal beliefs and value systems. I was a part of the team that developed this platform from initial design, creating a whole new design-system and component library. I was especially focused on the project meeting WCAG 2.1 AAA standards and building out charts and data visualizations.",
     "tools": ["Vue", "CSS", "Chartist"],
     "link": "https://www.merrilledge.com/idea-builder"
-  },
-  {
-    "title": "Food Truck Slack Bot",
-    "date": "Spring 2019",
-    "description": "A custom office-wide Slack bot with custom AI to inform the company each day before lunch which food trucks were going to be in the area. The bot would scrape data from the food truck’s websites, google calendars, and tweets to determine schedules and location.",
-    "tools": [
-      "JavaScript",
-      "Node",
-      "Express",
-      "Slack",
-      "Next JS",
-      "cron-job",
-      "Twitter API",
-      "Google Calendar API"
-    ],
-    "link": "https://github.com/bryn-newell/food-truck-bot"
   }
 ]
