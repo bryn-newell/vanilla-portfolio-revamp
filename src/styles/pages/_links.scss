@@ -1,0 +1,28 @@
+@use '../variables' as *;
+
+// Piccalilli you continue to be my heros for stealing code
+// https://piccalil.li/blog/a-simple-masonry-like-composable-layout/
+
+.links {
+  padding-block-start: 1.25rem;
+  padding-block-end: 6rem;
+
+  &__title {
+    color: $rose-gold;
+  }
+
+}
+
+.bsky-grid {
+  --gutter: 0.25em;
+  --flow-space: var(--gutter);
+  --switcher-target-container-width: 25rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: masonry;
+}
+
+.bsky-embed {
+  margin-inline: 1rem;
+}
