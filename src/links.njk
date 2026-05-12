@@ -21,13 +21,14 @@ pageDescription: community garden! here's some folks i like!
 
   {% for pal in pals %}
   <a class="link rosegold" href="{{ pal.url }}">
-    <span class="link-number">0{{ loop.index }}. </span>
-    {{ pal.displayText }}
+    <span class="link-number">
+      {% if loop.index < 10 %} 0{% endif %}{{ loop.index }}. </span>
+        {{ pal.displayText }}
   </a>
   {% endfor %}
 
-  <p>and to prove to you that some of these folks are funny and worth you time - I present to you a live sneak peak into
-    what they're Posting™️ about lately</p>
+  <p>and to prove to you that some of these folks are funny and worth your time - I present to you a live sneak peak
+    into what they're Posting™️ about lately</p>
 
 </section>
 
