@@ -1,0 +1,45 @@
+@use '../variables' as *;
+
+// Piccalilli you continue to be my heros for stealing code
+// https://piccalil.li/blog/a-simple-masonry-like-composable-layout/
+
+.links {
+  padding-block-start: 1.25rem;
+  padding-block-end: 6rem;
+
+  &__title {
+    color: $rose-gold;
+  }
+
+  .link {
+    &:not(:last-of-type) {
+      &:after {
+        content: "/";
+        display: inline-block;
+        margin-right: 0.25rem;
+      }
+    }
+  }
+}
+
+.bsky-grid {
+  --gutter: 2rem;
+  --flow-space: var(--gutter);
+  --switcher-target-container-width: 60rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter);
+  align-items: flex-start;
+
+  >* {
+    flex-grow: 1;
+    flex-basis: calc((var(--switcher-target-container-width) - 100%) * 999);
+  }
+}
+
+.bsky-embed {
+  iframe {
+    margin-inline: 1rem;
+  }
+}
