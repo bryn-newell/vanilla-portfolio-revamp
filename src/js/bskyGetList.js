@@ -27,6 +27,8 @@ const loadBskyEmbedScript = () => {
   document.body.appendChild(embedScript);
 };
 
+const COLUMN_COUNT = 3;
+
 const getListFeed = async () => {
   const getFeedUrl = `${bskyAPI}app.bsky.feed.getListFeed?limit=${LIMIT}&list=${eliteCadreUri}`;
 
@@ -36,23 +38,26 @@ const getListFeed = async () => {
     const feed = feedData.feed;
 
     if (feed) {
-      feed.map((feedObj) => {
-        const post = feedObj.post;
-        if (post) {
-          const isAReply = feedObj.reply;
-          if (!isAReply) {
-            const postBlockQuote = document.createElement('blockquote');
-            postBlockQuote.setAttribute('data-bluesky-cid', post.cid);
-            postBlockQuote.setAttribute('data-bluesky-uri', post.uri);
-            postBlockQuote.setAttribute(
-              'data-bluesky-embed-color-mode',
-              'system',
-            );
-            postBlockQuote.classList.add('bluesky-embed');
+      const columns = Array.from({ length: COLUMN_COUNT }, () => {
+        const col = document.createElement('div');
+        col.classList.add('flow');
+        container.appendChild(col);
+        return col;
+      });
 
-            container.appendChild(postBlockQuote);
-          }
-        }
+      let colIndex = 0;
+      feed.forEach((feedObj) => {
+        const post = feedObj.post;
+        if (!post || feedObj.reply) return;
+
+        const postBlockQuote = document.createElement('blockquote');
+        postBlockQuote.setAttribute('data-bluesky-cid', post.cid);
+        postBlockQuote.setAttribute('data-bluesky-uri', post.uri);
+        postBlockQuote.setAttribute('data-bluesky-embed-color-mode', 'system');
+        postBlockQuote.classList.add('bluesky-embed');
+
+        columns[colIndex].appendChild(postBlockQuote);
+        colIndex = (colIndex + 1) % COLUMN_COUNT;
       });
     }
   } catch (error) {

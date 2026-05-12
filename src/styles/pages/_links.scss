@@ -14,15 +14,23 @@
 }
 
 .bsky-grid {
-  --gutter: 0.25em;
+  --gutter: 2rem;
   --flow-space: var(--gutter);
-  --switcher-target-container-width: 25rem;
+  --switcher-target-container-width: 60rem;
 
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: masonry;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter);
+  align-items: flex-start;
+
+  >* {
+    flex-grow: 1;
+    flex-basis: calc((var(--switcher-target-container-width) - 100%) * 999);
+  }
 }
 
 .bsky-embed {
-  margin-inline: 1rem;
+  iframe {
+    margin-inline: 1rem;
+  }
 }
