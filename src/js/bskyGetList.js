@@ -1,7 +1,7 @@
 // shout out Salma - thanks for letting me steal most of your code :)
 // https://whitep4nth3r.com/blog/show-bluesky-likes-on-blog-posts/
 
-const LIMIT = 55;
+const LIMIT = 25;
 const bskyAPI = 'https://public.api.bsky.app/xrpc/';
 const eliteCadreUri =
   'at://did:plc:vgti27vqwdnwfh3rn2sijoho/app.bsky.graph.list/3mlojkqwjcv27';
