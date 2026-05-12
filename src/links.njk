@@ -12,11 +12,38 @@ pageDescription: community garden! here's some folks i like!
   </a>
 </nav>
 
-<section class="now flow writingInner">
-  <h1 class="now__title">links</h1>
+<section class="links flow writingInner">
+  <h1 class="links__title">links</h1>
+  <p>I’m in this industry because of the people that introduced me to the web, encouraged me to keep going when it got
+    hard, and reminded me that the internet can (and should!) be a fun and welcoming place. To keep the momentum moving
+    forward ~ here’s an (incomplete) list of folks that inspire me and I’d highly recommend you connect with as well!
+  </p>
 
+  {% for pal in pals %}
+  <a class="link rosegold" href="{{ pal.url }}">
+    <span class="link-number">0{{ loop.index }}. </span>
+    {{ pal.displayText }}
+  </a>
+  {% endfor %}
 
-  <section class="post__likes" data-bsky-container>
-  </section>
+  <p>and to prove to you that some of these folks are funny and worth you time - I present to you a live sneak peak into
+    what they're Posting™️ about lately</p>
+
+</section>
+
+<section data-bsky-container class="bsky-grid">
+</section>
+
+<section class="links flow writingInner">
+  <p class="now__description">read some more about a links page, sometimes also known as a webring!
+    <a href="https://art.teleportacia.org/observation/vernacular/links.html" target="_blank" rel="noopener noreferrer"
+      class="link rosegold">https://art.teleportacia.org/observation/vernacular/links.html</a>
+    <a href="https://thoughts.melonking.net/thoughts/every-site-needs-a-links-page-why-linking-matters" target="_blank"
+      rel="noopener noreferrer"
+      class="link rosegold">https://thoughts.melonking.net/thoughts/every-site-needs-a-links-page-why-linking-matters</a>
+    <a href="https://indieweb.org/webring" target="_blank" rel="noopener noreferrer"
+      class="link rosegold">https://indieweb.org/webring</a>
+  </p>
+
 
 </section>
