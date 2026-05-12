@@ -1,7 +1,7 @@
 // shout out Salma - thanks for letting me steal most of your code :)
 // https://whitep4nth3r.com/blog/show-bluesky-likes-on-blog-posts/
 
-const LIMIT = 25;
+const LIMIT = 33;
 const bskyAPI = 'https://public.api.bsky.app/xrpc/';
 const eliteCadreUri =
   'at://did:plc:vgti27vqwdnwfh3rn2sijoho/app.bsky.graph.list/3mlojkqwjcv27';
@@ -36,6 +36,7 @@ const getListFeed = async () => {
     const bskyListFeed = await fetch(getFeedUrl);
     const feedData = await bskyListFeed.json();
     const feed = feedData.feed;
+    console.log(feed);
 
     if (feed) {
       const columns = Array.from({ length: COLUMN_COUNT }, () => {
@@ -48,7 +49,9 @@ const getListFeed = async () => {
       let colIndex = 0;
       feed.forEach((feedObj) => {
         const post = feedObj.post;
-        if (!post || feedObj.reply) return;
+        const isReply = feedObj.reply;
+        // to do - also filter out hidden posts for non logged in users
+        if (!post || isReply) return;
 
         const postBlockQuote = document.createElement('blockquote');
         postBlockQuote.setAttribute('data-bluesky-cid', post.cid);
