@@ -13,30 +13,41 @@ const getList = async () => {
   try {
     const bskyList = await fetch(getPostURL);
     const listData = await bskyList.json();
-    console.log(listData);
   } catch (error) {
     console.log(error);
   }
 };
 
-getListFeed = async () => {
+const loadBskyEmbedScript = () => {
+  const embedScript = document.createElement('script');
+  embedScript.src = 'https://embed.bsky.app/static/embed.js';
+  embedScript.async = true;
+  embedScript.charset = 'utf-8';
+  document.body.appendChild(embedScript);
+};
+
+const getListFeed = async () => {
   const getFeedUrl = `${bskyAPI}app.bsky.feed.getListFeed?limit=${LIMIT}&list=${eliteCadreUri}`;
 
   try {
     const bskyListFeed = await fetch(getFeedUrl);
     const feedData = await bskyListFeed.json();
     const feed = feedData.feed;
-    console.log(feedData);
 
-    // if (feed) {
-    //   const likesMore = document.createElement('li');
-    //   likesMore.classList.add('post__like');
-    //   likesMore.classList.add('post__like--howManyMore');
-    //   likesMore.innerText = `+${postLikesCount - likesActorLength}`;
-    //   likesContainer.appendChild(likesMore);
-    // }
+    if (feed) {
+      const post = feed[0].post;
+      const postBlockQuote = document.createElement('blockquote');
+      postBlockQuote.setAttribute('data-bluesky-cid', post.cid);
+      postBlockQuote.setAttribute('data-bluesky-uri', post.uri);
+      postBlockQuote.setAttribute('data-bluesky-embed-color-mode', 'system');
+      postBlockQuote.classList.add('bluesky-embed');
+
+      container.appendChild(postBlockQuote);
+    }
   } catch (error) {
     console.log(error);
+  } finally {
+    loadBskyEmbedScript();
   }
 };
 
